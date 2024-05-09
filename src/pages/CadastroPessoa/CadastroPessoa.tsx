@@ -1,6 +1,9 @@
 import { useState } from "react";
 import HeaderPessoa from "../../componentes/HeaderPessoa/HeaderPessoa"
 import "./cadastroPessoa.css"
+import { FcGoogle } from "react-icons/fc";
+import Diversidade from "../../images/Diversidade.png"
+import { IoLogoLinkedin } from "react-icons/io";
 export default function CadastroPessoa(){
     const [telefone,setTelefone] = useState("");
     const [cep,setCep] = useState("");
@@ -8,8 +11,9 @@ export default function CadastroPessoa(){
     const [senhaRepetir,setSenhaRepetir] = useState("");
     return(
         <>
-            <div className="containercadastroPessoa">
             <HeaderPessoa/>
+            <div className="containercadastroPessoa">
+            
             <div className="formularioCadastroPessoa">
                 <form>
                 <input type="text"  maxLength={145} placeholder="Nome Completo"/>
@@ -52,13 +56,12 @@ export default function CadastroPessoa(){
                     setSenhaRepetir(e.target.value);
                 }} onBlur={() => {
                     const inputValue = document.getElementById("sda");
-                    if(senhaRepetir.length < 8 || senhaRepetir !== senha )
+                    if(senha !== senhaRepetir)
                         inputValue?.classList.toggle("ats");
-                    
                 }} onFocus={()=>{
                     const inputValue = document.getElementById("sda");
-                    if(senhaRepetir.length < 8 || senhaRepetir !== senha)
-                    inputValue?.classList.toggle("ats");
+                    if(inputValue?.classList.contains("ats"))
+                        inputValue?.classList.toggle("ats");
                 }}/>
                 <input type="checkbox"/>
                 <label>Li e aceito as <a href="#">Condições Legais</a> e a <a href="#">Política de Privacidade</a></label>
@@ -68,12 +71,24 @@ export default function CadastroPessoa(){
                 </form>
                 <p>Você é uma empresa? <a href="#">Cadastre-se aqui</a></p>
             </div>
+            <div className="formularioCadastroPessoa">
             <div className="redes">
+                <h2>Dê o próximo salto na sua carreira aqui!</h2>
+                <p>Entre e comece a se candidatar</p>
+                <button>
+                <FcGoogle />
+                <p>Google</p>
+                </button>
+                <button>
+                <IoLogoLinkedin color="rgba(0, 119, 181, 1)"/>
+                <p>Linkedin</p>
+                </button>
             </div>
             <div className="imagem">
+                <img src={Diversidade} alt="Pessoas diversas" />
             </div>
             </div>
-            
+            </div>
         </>
     )
 }

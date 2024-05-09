@@ -38,9 +38,6 @@ export default function HeaderPessoa() {
                         </p>
                     </div>
             }
-            <button onClick={() => { setLogin(!login); }}>
-                mudar
-            </button>
         </>
     );
 }
