@@ -1,6 +1,7 @@
 import './App.css'
 import LoginCard from './componentes/LoginCard/LoginCard'
 import CadastroPessoa from "./pages/CadastroPessoa/CadastroPessoa"
+import BancoTalento from "./pages/BancoTalento/bancoTalento"
 import Login from './pages/Login/Login'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <div className='container'>
-        <CadastroPessoa/>
+        <BancoTalento/>
       </div>
     </>
   )
