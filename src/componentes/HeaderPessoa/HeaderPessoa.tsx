@@ -6,7 +6,7 @@ import { FaBell } from "react-icons/fa";
 
 export default function HeaderPessoa() {
     const [menuAtivo, setMenuAtivo] = useState(false);
-    const [login, setLogin] = useState(true);
+    const [login, setLogin] = useState(false);
 
     return (
         <>

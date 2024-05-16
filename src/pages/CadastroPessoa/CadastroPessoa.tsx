@@ -2,7 +2,7 @@ import { useState } from "react";
 import HeaderPessoa from "../../componentes/HeaderPessoa/HeaderPessoa"
 import "./cadastroPessoa.css"
 import { FcGoogle } from "react-icons/fc";
-import Diversidade from "../../images/Diversidade.png"
+import diversidade from "../../images/Diversidade.png"
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 export default function CadastroPessoa() {
@@ -117,7 +117,7 @@ export default function CadastroPessoa() {
                         </div>
                     </div>
                     <div className="imagem">
-                        <img src={Diversidade} alt="Pessoas diversas" />
+                        <img src={diversidade} alt="Pessoas diversas" />
                     </div>
                     <p className="direitos">&copy;ÆQUITAS Todos os Direitos Reservados</p>
                 </div>
