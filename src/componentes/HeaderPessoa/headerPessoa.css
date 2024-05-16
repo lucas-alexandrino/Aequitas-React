@@ -10,11 +10,21 @@
     position: sticky;
     top: 0;
     transition: all 0.3s;
+    z-index: 999;
 }
+
 
 .logoHeaderPessoa{
     font-size: 40px;
     font-family: "David libre";
+}
+
+.logoUm{
+    display: inline;
+}
+
+.logoDois{
+    display: none;
 }
 
 .escritaHeaderPessoa{
@@ -102,4 +112,13 @@
 
 .ativo span:nth-child(2){
     opacity: 0;
+}
+
+@media(max-width: 600px){
+    .logoUm{
+        display: none;
+    }
+    .logoDois{
+        display: inline;
+    }
 }

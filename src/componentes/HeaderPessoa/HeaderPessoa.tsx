@@ -6,7 +6,7 @@ import { FaBell } from "react-icons/fa";
 
 export default function HeaderPessoa() {
     const [menuAtivo, setMenuAtivo] = useState(false);
-    const [login, setLogin] = useState(false);
+    const [login, setLogin] = useState(true);
 
     return (
         <>
@@ -14,8 +14,11 @@ export default function HeaderPessoa() {
             {
                 login ?
                     <div className="headerPessoaContainer logada">
-                        <h1 className="logoHeaderPessoa">
+                        <h1 className="logoHeaderPessoa logoUm">
                             ÆQUITAS
+                        </h1>
+                        <h1 className="logoHeaderPessoa logoDois">
+                            Æ
                         </h1>
                         <div className="conteudoPessoa">
                             <button><FaBell size="30px" /></button>
@@ -30,8 +33,11 @@ export default function HeaderPessoa() {
                     </div>
                     :
                     <div className="headerPessoaContainer">
-                        <h1 className="logoHeaderPessoa">
+                        <h1 className="logoHeaderPessoa logoUm">
                             ÆQUITAS
+                        </h1>
+                        <h1 className="logoHeaderPessoa logoDois">
+                            Æ
                         </h1>
                         <p className="escritaHeaderPessoa">
                             já usa Æquitas?<a href="#">Login</a>
