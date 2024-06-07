@@ -120,36 +120,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                    <div id="planos">
-                    <h2>Nossos Planos</h2>
-                    <p>Escolha o plano que melhor se adapta às necessidades da sua empresa e potencialize suas chances de encontrar os melhores talentos com a Aequitas. Seja qual for o plano escolhido, estamos comprometidos em fornecer os melhores recursos e suporte para suas iniciativas de recrutamento inclusivo.&#10003;</p>
-                    <div className="planos">
-                        <div className="planosCard">
-                            <h4>R$00<span>/Gratuito</span></h4>
-                            <h3>Básico</h3>
-                            <p>acesso a plataforma de recrutamento:</p>
-                            <div className="beneficios">
-                                <span>&#10003;</span>
-                                <p>Conecte-se com uma ampla gama de candidatos diversificados.</p>
-                            </div>
-                            <div className="beneficios">
-                                <span>&#10003;</span>
-                                <p>Notificações de perfil que tenha o que a sua empresa procura.</p>
-                            </div>
-                            <div className="beneficios">
-                                <span>&#10003;</span>
-                                <p>Acesso simultâneo para 2 dispositivos:Revisão colaborativa de perfis de candidatos.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button">Experimente</button>
-                    </div>
-                    <div id="futuro">
 
-                    </div>
-                    <div id="contato">
-
-                    </div>
             </div>
         </>
     )
