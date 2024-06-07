@@ -91,7 +91,9 @@
     right: 10%;
 }
 
-
+.visibilidadeSenha:hover{
+    cursor: pointer;
+}
 
 #enviar{
     background-color: rgb(26, 67, 170);
@@ -108,9 +110,13 @@
     background-color: rgb(13, 52, 151);
 }
 
-a{
+.tm a{
     color: rgb(26, 67, 170);
     text-decoration: none;
+}
+
+.tm a:hover{
+    text-decoration:underline;
 }
 
 

@@ -1,0 +1,296 @@
+.landPageContent{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(250, 250, 250);
+    scroll-behavior: smooth;
+}
+
+
+.landPageContent .headerLandPage{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    transition: all 0.3s;
+    z-index: 999;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.headerLandPage .superior{
+    padding: 0 30px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.landPageContent .headerLandPage .superior h1{
+    font-size: 40px;
+    font-family: "David libre";
+    color: rgb(26, 67, 170);
+}
+
+.landPageContent .headerLandPage .superior .mudarLinguagem{
+    margin: 0 20px 0 auto;
+}
+
+.mudarLinguagem{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 255, 255);
+}
+
+.mudarLinguagem input[type="radio"]{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+}
+.mudarLinguagem label{
+    border: 1px solid #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.linguagemAtiva{
+    background-color: rgb(25, 99, 99)
+}
+
+
+.headerLandPage .navBarLandPage{
+    width: 100%;
+    height: 20px;
+    font-size: clamp(1rem, 2vw - 5px, 2rem);
+}
+
+.navBarLandPage nav ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+.navBarLandPage nav ul li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navBarLandPage nav ul li a{
+    text-decoration: none;
+    text-transform:capitalize;
+    position: relative;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1rem, 1.5vw, 2.5rem)
+}
+
+.navBarLandPage nav ul li a:before{
+    content: "";
+    width: 0;
+    height:5px;
+    background-color: rgb(53, 78, 139);
+    position: absolute;
+    top:100%;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navBarLandPage nav ul li:hover a:before{
+    width: 100%;
+}
+
+#bemVindo, #porqueAequitas, #feedBack, #planos, #futuro, #contatos{
+    width: 100%;
+    height: 100%;
+}
+#bemVindo{
+    display: flex;
+    padding: 5% 2% 5% 5%;
+    justify-content: center;
+}
+
+.textoBemVindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+#bemVindo .textoBemVindo h2{
+    font-size: clamp(2rem, 6vh + 3px, 5rem);
+    color: rgb(26, 67, 170);
+    align-self: flex-start;
+}
+
+#bemVindo .textoBemVindo h3{
+    font-size: clamp(3rem, 10vh + 3px, 7rem);
+    margin: 1.5vh 0;
+}
+
+#bemVindo .textoBemVindo p{
+    font-size: clamp(1rem, 3.3vh + 3px, 5rem);
+    text-align: justify;
+}
+
+#bemVindo .textoBemVindo .login{
+    width: calc(15vw + 5px);
+    height: calc(5vh + 10px);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin:2vh 0 0 0;
+    background-color: rgb(26, 67, 170);
+    color: rgb(255, 255, 255);
+}
+
+#bemVindo .imagemBemVindo{
+    width: 100vw;
+}
+
+#bemVindo .imagemBemVindo img{
+    width: 100%;
+    height: 100%;
+}
+
+#bemVindo .imagemBemVindo img:last-child{
+    position: relative;
+    bottom: 95%;
+    left: 0;
+}
+
+#bemVindo .imagemBemVindo img:first-child{
+    position: relative;
+    left: 5%;
+}
+
+#porqueAequitas{
+    display: flex;
+    align-items: center;
+    padding: 10% 0;
+    flex-direction: column;
+}
+
+#porqueAequitas h2{
+    font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
+    margin: 5vh 0 0 0;
+}
+
+#porqueAequitas p{
+    font-size:clamp(1.3rem, 5vw - 7vh, 3rem);
+}
+
+#porqueAequitas .porqueCardContainer{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    margin: 7vh 0 0 0;
+}
+
+
+
+#porqueAequitas .porqueCardContainer .cardPorque{
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(5vh - 10px);
+    margin: 0 auto;
+}
+
+#porqueAequitas .porqueCardContainer .cardPorque img{
+    width: 25%;
+}
+
+#porqueAequitas .porqueCardContainer .cardPorque p{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#porqueAequitas .porqueCardContainer .cardPorque .barra{
+    border: 4px solid rgb(26, 67, 170);
+    width: 30%;
+}
+
+#porqueAequitas .porqueCardContainer .cardPorque .escrita p{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+#feedBack{
+    background-image: url("../../images/feedBack.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+}
+
+#feedBack h2{
+    font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
+}
+
+#feedBack p{
+    font-size:clamp(1.3rem, 5vw - 7vh, 3rem);
+}
+
+#feedBack .containerFeedBack{
+    width: 100%;
+    display: flex;
+    margin: 15vh 0 0 0;
+}
+
+#feedBack .containerFeedBack .cardFeedBack{
+    max-width: 400px;
+    min-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(26, 67, 170);
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    height: calc(50vh - 20px);
+    text-align: justify;
+}
+
+#feedBack .containerFeedBack .cardFeedBack img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+
+#feedBack .containerFeedBack .cardFeedBack h3{
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    color: rgb(255, 255, 255);
+}
+
+#feedBack .containerFeedBack .cardFeedBack p{
+    font-size: clamp(.7rem, 1.3vw, 3rem);
+    color: rgb(255, 255, 255);
+}
+
+#planos{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
