@@ -1,10 +1,10 @@
 
-.background{
-    background-image: url(../../images/Rectangle69.png);
-    background-size: cover;
+body{
+    background: #1a43aa;
+    /* background-size: cover;
     background-position-y: -19px;
     width: 100vw;
-    height: 45.2vh;
+    height: 45.2vh; */
 }
 .headerBancoContainer{  
     display: flex;
@@ -60,13 +60,29 @@
 .menubar, button:hover{
     cursor: pointer;
 }
-
-.nome{
+.aegames{
+    font-size: 15px;
     font-family: "david libre", serif;
-    font-size: 50px;
 }
 
-.nome2{
+.aequitas{
+    font-size: 50px;
     font-family: "david libre", serif;
-    font-size: 20px;
+}
+.mago{
+    width: 60px;
+    border-radius: 50px;
+    transform: translate(1vw, -3vh);
+}
+
+/* Games */
+
+.games{
+    display: flex;
+    margin: 50px;
+}
+.game1, .game2, .game3, .game4{
+    width: 450px;
+    height: 250px;
+    padding-right: 30px;
 }

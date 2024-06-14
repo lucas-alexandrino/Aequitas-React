@@ -11,11 +11,11 @@ export default function HeaderBanco() {
                 <div className="background">
 
                 <div className="headerBancoContainer">
-                    <h1 className="logoHeaderPessoa">
+                    <h1 className="nome">
                         ÆQUITAS
                     </h1>
                     <div className="forBusiness">
-                    <h6>
+                    <h6 className="nome2">
                         For Business
                     </h6>
                     </div>
