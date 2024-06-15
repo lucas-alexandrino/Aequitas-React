@@ -6,7 +6,7 @@ import imagem_2 from "../../images/recrutamento.png"
 import imagem_3 from "../../images/selecao.png"
 import imagem_4 from "../../images/gestao.png"
 import soft from "../../images/preparacao.png"
-import diversidade from "../../images/diversidade.png"  
+import diversidade from "../../images/Diversidade.png"  
 export default function DescobrindoTalentos(){
     return (
         <>
@@ -55,12 +55,12 @@ export default function DescobrindoTalentos(){
         <div className='soft_conteudo'>
                 <img src={diversidade} alt="" />
                 <h3>Diversidade e inclusão</h3>
-                <p>No ÆQUITAS, valorizamos e promovemos a inclusão e diversidade em todas  as oportunidades de emprego. Nossa missão é criar um ambiente de  trabalho justo e igualitário para todos os candidatos, independentemente  de sua origem, identidade ou habilidades. Junte-se a nós e faça parte  de uma comunidade comprometida em moldar um futuro de trabalho mais  inclusivo e diversificado.</p>
+                <p>Na ÆQUITAS, promovemos inclusão e diversidade no emprego, criando um  ambiente justo e igualitário para todos os candidatos. Junte-se a nós  para moldar um futuro de trabalho mais inclusivo e diversificado.</p>
         </div>
 
         <div className='soft_conteudo'>
                 <img src={soft} alt="" />
-                <p>Na ÆQUITAS, valorizamos as soft skills tanto quanto as habilidades  técnicas. Por meio de parcerias com HR Techs, oferecemos testes de  perfil que avaliam as habilidades comportamentais dos candidatos. Isso  nos permite identificar talentos que se destacam não apenas em suas  áreas, mas também se encaixam na cultura das empresas. Facilitamos  entrevistas orientadas com base nos resultados dos testes, garantindo a  melhor correspondência entre candidatos e empresas. Junte-se a nós para  promover a inclusão e a diversidade no local de trabalho, enquanto  descobre o poder das soft skills com o ÆQUITAS.</p>
+                <p>Na ÆQUITAS, valorizamos soft skills e habilidades técnicas. Com testes  de perfil em parceria com HR Techs, identificamos talentos alinhados à  cultura das empresas, facilitando entrevistas para promover inclusão e  diversidade.</p>
         </div>
             
         </div>
@@ -100,11 +100,102 @@ export default function DescobrindoTalentos(){
 		</div>
         
 	</div>
+    <button className='botao_timeline'><h3>Experimente</h3></button>
 </section>
 
 
+<footer className="rodape">
+        
+        <ul className="lista-rodape">
+            <li className="lista-rodape__titulo">Institucional</li>
 
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Quem somos?</a>
+            </li>
 
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Por que usar ÆQUITAS</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Acessibilidade no ÆQUITAS</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Fale conosco</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Termos</a>
+            </li>
+
+        </ul>
+
+        <ul className="lista-rodape">
+            <li className="lista-rodape__titulo">Empresas</li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Ajuda</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Anunciar vagas</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Buscar candidatos</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Política de privacidade</a>
+            </li>
+
+        </ul>
+
+        <ul className="lista-rodape">
+            <li className="lista-rodape__titulo">Candidatos</li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Ajuda</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Política de privacidade</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Vagas</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Cadastre seu currículo</a>
+            </li>
+
+        </ul>
+
+        <ul className="lista-rodape">
+            <li className="lista-rodape__titulo">Siga-nos</li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Ajuda</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Política de privacidade</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Vagas</a>
+            </li>
+
+            <li className="lista-rodape__item">
+                <a href="#" className="lista-rodape__link">Cadastre seu currículo</a>
+            </li>
+
+        </ul>
+    </footer>
+
+        <h5>@ ÆQUITAS Todos os direitos reservados.</h5>
         
         </>
     )
