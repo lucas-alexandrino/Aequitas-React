@@ -1,5 +1,8 @@
 import './App.css'
-import LoginCard from './componentes/LoginCard/LoginCard'
+
+import DescobrindoTalentos from './componentes/DescobrindoTalento/DescobrindoTalentos'
+import HeaderEmpressa from './componentes/HeaderEmpressa/HeaderEmpressa'
+import CadastroEmpresa from './pages/CadastroEmpresa/CadastroEmpresa'
 import CadastroPessoa from "./pages/CadastroPessoa/CadastroPessoa"
 import BancoTalento from "./pages/BancoTalento/bancoTalento"
 import Login from './pages/Login/Login'
@@ -10,7 +13,10 @@ function App() {
   return (
     <>
       <div className='container'>
+
         <Jogos/>
+
+
       </div>
     </>
   )
