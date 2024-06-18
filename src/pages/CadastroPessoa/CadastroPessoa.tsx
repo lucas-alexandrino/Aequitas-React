@@ -1,7 +1,7 @@
 import HeaderPessoa from "../../componentes/HeaderPessoa/HeaderPessoa"
 import "./cadastroPessoa.css"
 import { FcGoogle } from "react-icons/fc";
-import persona from "../../images/personaCadastro.png"
+import persona from "../../images/Diversidade.png"
 import wave from "../../images/waveCadastro.png"
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
@@ -12,6 +12,7 @@ export default function CadastroPessoa() {
                 <HeaderPessoa />
                 <div className="formularioCadastroPessoa">
                     <form>
+                        
                         <input  type="text" placeholder="Nome Completo" ></input>
                         <input  type="email" placeholder="E-mail"></input>
                         <input  type="text" placeholder="CPF"></input>
@@ -55,7 +56,7 @@ export default function CadastroPessoa() {
                     </form>
                 </div>
                 <img src={wave} alt="" id="waveCadastroPessoa"/>
-                <img src={persona} alt="Mulher cadeirante feliz se inscrevendo no site" id="personaCadastroPessoa"/>
+                <img src={persona} alt="" id="personaCadastroPessoa"/>
                 <p className="direitos">&copy;ÆQUITAS  Todos os direitos reservados.</p>
             </div>
         </>

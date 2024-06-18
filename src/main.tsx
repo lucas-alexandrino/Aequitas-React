@@ -7,22 +7,33 @@ import CadastroEmpresa from './pages/CadastroEmpresa/CadastroEmpresa.tsx'
 import CadastroPessoa from './pages/CadastroPessoa/CadastroPessoa.tsx'
 import Login from './pages/Login/Login.tsx'
 import Home from './pages/LandPage/Home.tsx'
+import PaginaErro from './pages/PaginaErro/PaginaErro.tsx'
+
+
 const router = createBrowserRouter([
+
 {
   path:"/",
-  element: <Home/>
-},
-{
-  path:"cadastroEmpresa",
-  element: <CadastroEmpresa/>
-},
-{
-  path:"Login",
-  element: <Login/>
-},
-{
-  path:"cadastroPessoa",
-  element: <CadastroPessoa/>
+  element: <App/>,
+  errorElement: <PaginaErro/>,
+  children: [
+    {
+      path: "/",
+      element: <Home/>
+    },
+    {
+      path:"cadastroEmpresa",
+      element: <CadastroEmpresa/>
+    },
+    {
+      path:"login",
+      element: <Login/>
+    },
+    {
+      path:"cadastroPessoa",
+      element: <CadastroPessoa/>
+    },
+  ]
 },
 ])
 

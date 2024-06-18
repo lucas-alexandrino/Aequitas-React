@@ -2,7 +2,7 @@ import { useState } from "react";
 import Logo from "../../images/Logo.jpeg"
 import "./headerEmpressa.css"
 import { FaBell } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 export default function HeaderEmpressa() {
     const [menuAtivo, setMenuAtivo] = useState(false);
@@ -53,7 +53,7 @@ export default function HeaderEmpressa() {
                         </p>
                         
                         <p className="escritaHeaderEmpressa">
-                            já usa Æquitas?<a href="#">Login</a>
+                            já usa Æquitas?<Link to="/login">Login</Link>
                         </p>
                     </div>
             }

@@ -32,7 +32,7 @@ input[type=number] {
 }
 
 .formularioCadastroPessoa form{
-    width: 70%;
+    width: 60%;
     height: 100%;
     padding: 30px;
 }
@@ -133,9 +133,9 @@ input[type=number] {
 }
 
 #personaCadastroPessoa{
-    width: 30vw;
+    width: 50%;
     height: 90vh;
-    right: 10%;
+    right: 0%;
     bottom: 1%;
 }
 

@@ -16,6 +16,12 @@
     text-decoration:underline;
 }
 
+
+.cadastroEmpresa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -34,80 +40,102 @@ input[type=number] {
 .formularioCadastroEmpresa form{
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 0 4%;
+
 }
 .formularioCadastroEmpresa form button:hover, .formularioCadastroEmpresa form input[type="checkbox"]{
     cursor: pointer;
 }
 .formularioCadastroEmpresa form input{
-    width: 48.4%;
+    width: 100%;
     height: calc(10vh - 20px);
-    margin: 2vh 1.5vw 2vh 0;
+    margin: 0;
     border-radius: 10px;
     padding: 0 0 0 5px;
     color: rgb(0, 0, 0);
 }
+
+.labelContent{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: calc(10vh + 10px);
+    margin: 0;
+}
+
+.labelContent span{
+    margin: 0;
+    padding: 0 0 0 15px;
+    color: rgb(196, 35, 35);
+}
 .redesEmpresa{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin: 0 0 0 auto;
+    width: 100%;
 }
 .redesEmpresa p{
     font-size: clamp(11px, 3vw - 7px, 20px );
-    padding: 0 0 0 auto;
 }
 .redesEmpresa .complementoEmpresa{
-    margin: 0 0 0 64%;
+    margin: 0 0 0 65%;
 }
 
 .itensEmpresa{
     display: flex;
-    width: 70%;
+    width: 100%;
     align-items:center;
-    justify-content: center;
-    gap: 30px;
-    margin: 1.5vh 0 0 auto ;
+    padding: 0 0 0 41%;
+    gap: 0 30px;
+    margin: 2vh 0 0 0; 
 }
 
 .itensEmpresa button{
-    width: 30%;
+    width: 40%;
     display: flex;
-    height: calc(6vh + 5px);
+    height: calc(8vh + 5px);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:1vw;
+    gap:0 1vw;
     border-radius: 10px;
     border: none;
 }
 
 .juncaoLabelCheckboxEmpresa{
     display: flex;
-    align-items: center;
-    width: 65%;
-    height: calc(6vh + 5px);
-    margin: 0 0 2vh auto;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 0 0 41%;
+    gap: 10px;
+    margin: 2vh 0 0 0;
 }
 
 .juncaoLabelCheckboxEmpresa input[type="checkbox"]{
     height: 20px;
     width: 25px;
-    margin: 0 1vw 0 0;
+}
+
+.juncaoLabelCheckboxEmpresa span{
+    margin: 0;
+    padding: 0 0 0 15px;
+    color: rgb(196, 35, 35);
 }
 
 .juncaoLabelCheckboxEmpresa label{
     font-size: clamp(10px, 1vw, 16px);
     text-align: justify;
+    width: 75%;
+    margin: 0 0 2vh 0;
 }
 
 .finalFormEmpresa{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 auto;
+    margin: 0 0 0 0;
 }
 #cadastrarEmpresa{
     width: 50%;
@@ -117,29 +145,30 @@ input[type=number] {
     font-weight: bold;
     background-color: rgb(26, 67, 170);
     color: rgb(240, 240, 240);
+    margin: 0 0 0 40%;
 }
 
 .finalFormEmpresa label{
-    margin: 2vh 0 0 0;
-    font-size: clamp(10px, 1vw, 16px);;
+    font-size: clamp(10px, 1vw, 16px);
+    margin: 1vh 0 0 55%;
 }
 
 #waveCadastroEmpresa, #personaCadastroEmpresa{
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     left: 0;
 }
 
 #waveCadastroEmpresa{
-    width: 30%;
-    height: 51%;
+    width: 35%;
+    height: 40%;
 }
 
 #personaCadastroEmpresa{
-    width: 40%;
-    height: 55%;
+    width: 40vw;
+    height: 50vh;
     left: .3%;
-    bottom: 0%;
+    bottom: .4%;
 }
 
 
