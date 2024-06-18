@@ -10,7 +10,11 @@ function App() {
   return (
     <>
       <div className='container'>
+<<<<<<< Updated upstream
         <BancoTalento/>
+=======
+        <CadastroPessoa/>
+>>>>>>> Stashed changes
       </div>
     </>
   )
