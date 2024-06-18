@@ -10,7 +10,6 @@ export default function HeaderPessoa() {
 
     return (
         <>
-        {}
             {
                 login ?
                     <div className="headerPessoaContainer logada">
