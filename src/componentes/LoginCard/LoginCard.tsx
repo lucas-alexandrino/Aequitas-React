@@ -3,7 +3,7 @@ import {  useState } from 'react';
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdOutlineVisibility } from "react-icons/md";
 import { MdOutlineVisibilityOff } from "react-icons/md";
-import './style.css'
+import './LoginCard.css'
 
 export default function LoginCard(){
     const [mostrarSenha, setMostrarSenha] = useState(false);

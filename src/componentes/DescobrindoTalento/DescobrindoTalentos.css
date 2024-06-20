@@ -3,11 +3,12 @@
     justify-content: space-around;
     background-image: url(../../images/fundo.png);
     background-size: cover;
-    background-position-y: -19px;
+   /*  background-position-y: -19px;  O QUE ESTÁ BUGANDO O HEADER */     
     width: 100vw;
     height: 47.8vh;
     margin-bottom: 5%;
 }
+
 .cabecalho_principal p{
     color: #FFF;
 }
@@ -16,7 +17,8 @@
     display: flex;
     flex-direction: column;
 }
-.botao{
+.btn-vagas{
+    color: black;
     width: 40%;
     align-self: center;
     margin-top: 10px;
@@ -186,6 +188,7 @@
 	line-height: 22px;
 }
 .botao_timeline{
+    color: black;
     width: 20%;
     align-self: center;
     margin-top: 10px;

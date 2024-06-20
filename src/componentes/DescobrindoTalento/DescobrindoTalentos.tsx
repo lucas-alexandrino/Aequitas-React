@@ -11,14 +11,14 @@ export default function DescobrindoTalentos(){
     return (
         <>
 
-        <HeaderPessoa/>
+<HeaderPessoa/>
         <div className='cabecalho_principal'>
             <div className='cabecalho_imagem'><img src={talentos_imagem} alt="" /></div>
             <div className='cabecalho_info'>
                 <h2>Descobrimos talentos para impactar empresas</h2>
                 <p>Publique uma vaga de emprego e atraia os currículos mais qualificados.</p>
                 
-                <button className='botao'><h3>Anunciar Vagas</h3></button>
+                <button className='btn-vagas' type='submit'><h3>Anunciar Vagas</h3></button>
             </div>
         </div>
 

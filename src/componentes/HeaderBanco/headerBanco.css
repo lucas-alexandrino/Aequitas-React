@@ -2,7 +2,7 @@
 .background{
     background-image: url(../../images/Rectangle69.png);
     background-size: cover;
-    background-position-y: -19px;
+  /*   background-position-y: -19px; O QUE ESTÁ BUGANDO O HEADER */
     width: 100vw;
     height: 45.2vh;
 }
