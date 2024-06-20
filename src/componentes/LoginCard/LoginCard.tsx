@@ -3,11 +3,11 @@ import {  useState } from 'react';
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdOutlineVisibility } from "react-icons/md";
 import { MdOutlineVisibilityOff } from "react-icons/md";
-import './style.css'
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { z } from "zod"; 
 import { zodResolver } from "@hookform/resolvers/zod"
+import './LoginCard.css'
 
 type LoginDados = z.infer <typeof LoginEsquema>
 
