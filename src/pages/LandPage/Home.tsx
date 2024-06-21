@@ -195,7 +195,7 @@ const BemVindo = (props: any) => {
             <h3>ÆQUITAS: Beyond equality.</h3>
             <p>An affirmative vacancy platform to improve the employability of minorities</p>
             <div className="botoes">
-                <button type="button" className="login" onClick={() => { props.setCaminho(!props.caminho) }}>Juntar-se</button>
+                <button type="button" className="login" onClick={() => { props.setCaminho(!props.caminho) }}>Join</button>
                 {/* <button type="button" className="login" onClick={() => { return navigate("login") }}>Login</button> */}
             </div>
             </div>
