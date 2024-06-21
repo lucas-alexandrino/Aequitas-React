@@ -94,7 +94,6 @@ input[type=number] {
 
 .itensEmpresa button{
     width: 40%;
-    display: flex;
     height: calc(8vh + 5px);
     display: flex;
     align-items: center;
