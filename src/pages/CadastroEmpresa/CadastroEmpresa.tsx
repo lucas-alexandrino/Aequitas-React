@@ -104,11 +104,11 @@ export default function CadastroEmpresa() {
                         <div className="redesEmpresa">
                             <p className="complementoEmpresa"> ou</p>
                             <div className="itensEmpresa">
-                                <button type="button">
+                                <button type="button" id="google">
                                     <FcGoogle size="20px" />
                                     <p>Google</p>
                                 </button>
-                                <button type="button">
+                                <button type="button" id="linkedin">
                                     <IoLogoLinkedin color="rgba(0, 119, 181, 1)" size="25px" />
                                     <p>Linkedin</p>
                                 </button>

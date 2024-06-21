@@ -57,6 +57,7 @@
     color: white;
     background: #0000;
 }
+
 .menubar, button:hover{
     cursor: pointer;
 }

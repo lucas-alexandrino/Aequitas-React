@@ -7,7 +7,6 @@ import CadastroEmpresa from './pages/CadastroEmpresa/CadastroEmpresa.tsx'
 import CadastroPessoa from "./pages/CadastroPessoa/CadastroPessoa.tsx"
 import BancoTalento from "./pages/BancoTalento/bancoTalento.tsx"
 import Login from './pages/Login/Login'
-import EscolhaCaminho from './componentes/escolhaCaminho/EscolhaCaminho.tsx'
 import Home from "./pages/LandPage/Home.tsx"
 // import Jogos from './jogos/jogos'
 
@@ -18,8 +17,8 @@ function App() {
     <BrowserRouter>
       <div className='container'>
       <Routes> 
-        <Route path='/home' element={<Home />} />
-        <Route path='/' element={<Login />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/talentos' element={<BancoTalento />} />
         <Route path='/cadastropessoa' element={<CadastroPessoa />} />
         <Route path='/cadastrorec' element={<CadastroEmpresa />} />
