@@ -3,11 +3,11 @@ import {  useState } from 'react';
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdOutlineVisibility } from "react-icons/md";
 import { MdOutlineVisibilityOff } from "react-icons/md";
+import './style.css'
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { z } from "zod"; 
 import { zodResolver } from "@hookform/resolvers/zod"
-import './LoginCard.css'
 
 type LoginDados = z.infer <typeof LoginEsquema>
 
@@ -59,7 +59,7 @@ export default function LoginCard(){
                     <button type="submit" id="enviar">Continuar</button>
                 </form>
                 <b><p className="tm">Você é novo no Æquitas?</p></b>
-                <p className="tm">Cadastrar-se como <Link to="/cadastroPessoa">Candidato</Link> ou <Link to="/cadastrorec">Empresa</Link></p>
+                <p className="tm">Cadastrar-se como <Link to="/cadastroPessoa">Candidato</Link> ou <Link to="/cadastroEmpresa">Empresa</Link></p>
             </div>
         </>
     )

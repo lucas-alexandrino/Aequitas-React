@@ -47,9 +47,9 @@ const EscolhaCaminho = React.forwardRef((props : any) =>{
             </div>
             <button type="button" onClick={() => {
                 if(selecionado == 1){
-                    navigate("/cadastrorec");
+                    navigate("cadastroEmpresa");
                 }else if(selecionado == 2) {
-                    navigate("/cadastropessoa")
+                    navigate("cadastroPessoa")
                 }else{
                     alert("Por favor selecione seu caminho")
                 }
