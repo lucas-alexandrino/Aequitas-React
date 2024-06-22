@@ -1,6 +1,6 @@
 import HeaderEmpressa from "../../componentes/HeaderEmpressa/HeaderEmpressa";
 import { FcGoogle } from "react-icons/fc";
-import persona from "../../images/personaEmpresa.png";
+import persona from "../../images/PersonaEmpresa.png";
 import wave from "../../images/WaveEmpresa.png";
 import { IoLogoLinkedin } from "react-icons/io";
 import "./cadastroEmpresa.css";
