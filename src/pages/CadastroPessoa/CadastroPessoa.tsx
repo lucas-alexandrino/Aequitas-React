@@ -1,7 +1,7 @@
 import HeaderPessoa from "../../componentes/HeaderPessoa/HeaderPessoa"
 import "./cadastroPessoa.css"
 import { FcGoogle } from "react-icons/fc";
-import persona from "../../images/personaCadastro.png"
+import persona from "../../images/PersonaEmpresa.png"
 import wave from "../../images/waveCadastro.png"
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";

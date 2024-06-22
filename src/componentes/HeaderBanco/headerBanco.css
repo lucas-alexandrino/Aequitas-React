@@ -25,10 +25,12 @@
 }
 
 .menubar{
-    margin-bottom: 100px;
+    flex-direction: row;
+    justify-content: flex-end;
     position: absolute;
-    padding-left: 53vw;
+    margin-left: 55vw;
 }
+
 .menubar, li{
     display: flex;
     list-style: none;
@@ -45,13 +47,13 @@
     margin-top: 4px;
     margin-right: 20px;
 }
-.menubar, li:hover{
-    cursor: pointer;
+.menubar,.nome,.forBusiness, li:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .nomeEmpresa:hover{
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 .menubar, button{
@@ -59,16 +61,22 @@
     color: white;
     background: #0000;
 }
-.menubar, button:hover{
-    cursor: pointer;
-}
+
 
 .nome{
     font-family: "david libre", serif;
     font-size: 50px;
+    width: 220px;
 }
 
 .nome2{
     font-family: "david libre", serif;
     font-size: 20px;
+}
+
+.AELogo{
+    width: 45px;
+    height: 43px;
+    margin-right: 5px;
+    border-radius: 100%;
 }
