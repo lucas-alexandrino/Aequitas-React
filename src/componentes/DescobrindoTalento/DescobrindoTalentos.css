@@ -3,11 +3,15 @@
     justify-content: space-around;
     background-image: url(../../images/fundo.png);
     background-size: cover;
+
    /*  background-position-y: -19px;  O QUE ESTÁ BUGANDO O HEADER */     
+
     width: 100vw;
     height: 47.8vh;
     margin-bottom: 5%;
 }
+
+
 
 .cabecalho_principal p{
     color: #FFF;
@@ -17,6 +21,7 @@
     display: flex;
     flex-direction: column;
 }
+
 
 .cabecalho_info h2 {
     font-weight: bold;
@@ -111,9 +116,11 @@
     padding-top: 10px;
 }
 .soft_conteudo p{
+
     font-size: 15px;
     text-align: center;
     padding-top: 10px;
+
 }
 .soft_container img{
     width: 100%;
@@ -202,7 +209,9 @@
 	line-height: 22px;
 }
 .botao_timeline{
+
     color: black;
+
     width: 20%;
     align-self: center;
     margin-top: 10px;
@@ -287,6 +296,8 @@ hr{
         
     }
 }
+
+
 
 
 h5{

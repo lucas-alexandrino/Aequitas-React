@@ -1,3 +1,4 @@
+
 import { Outlet } from 'react-router'
 // import './App.css'
 
@@ -11,10 +12,12 @@ import Login from './pages/Login/Login'
 import Home from "./pages/LandPage/Home.tsx"
 // import Jogos from './jogos/jogos'
 
+
 function App() {
 
   return (
     <>
+
     <BrowserRouter>
   
       <Routes> 
@@ -29,6 +32,7 @@ function App() {
 
 
       </BrowserRouter>
+
     </>
   )
 }
