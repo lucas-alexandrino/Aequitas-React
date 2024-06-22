@@ -82,13 +82,13 @@
 }
 
 .visibilidadeSenha{
-    position:absolute;
+    position: relative;
     display: flex;
     align-items: center;
     border: none;
     background-color: rgba(0,0,0, 0);
-    bottom: 32%;
-    right: 10%;
+    bottom: 5.5vh;
+    left: 43%;
 }
 
 .visibilidadeSenha:hover{
@@ -119,6 +119,10 @@
     text-decoration:underline;
 }
 
+.containerLoginCard span{
+    font-size: small;
+    color: rgb(196, 35, 35);
+}
 
 @media(max-width: 600px){
     .containerLoginCard{
@@ -142,45 +146,7 @@
     }
 
     .visibilidadeSenha{
-        right: 15%;
-        bottom: 35.5%;
+        left: 40%;
+        bottom: 4.5vh;
     }
-}
-
-@media(max-height:630px){
-
-    .containerLoginCard{
-        min-height: auto;
-        max-height: 600px;
-        height: 600px;
-        border-radius: 0;
-        box-shadow: none;
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0, 0);
-    }
-
-    .logo{
-        font-size: 30px;
-    }
-    .tm{
-        font-size: 15px;
-    }
-    .cinza{
-        margin: 3px 0;
-    }
-    .botao, #enviar{
-        height: 35px;
-        margin: 3px 0;
-    }
-    .dados{
-        height: 35px;
-        margin: 5px 0;
-    }
-    .visibilidadeSenha{
-        right: 9%;
-        bottom: 56.5%;
-    }
-
 }

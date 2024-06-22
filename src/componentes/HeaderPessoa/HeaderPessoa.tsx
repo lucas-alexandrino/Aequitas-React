@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../../images/Logo.jpeg"
 import "./headerPessoa.css"
 import { FaBell } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 export default function HeaderPessoa() {
@@ -39,7 +40,7 @@ export default function HeaderPessoa() {
                             Æ
                         </h1>
                         <p className="escritaHeaderPessoa">
-                            já usa Æquitas?<a href="#">Login</a>
+                            já usa Æquitas?<Link to="/login">Login</Link>
                         </p>
                     </div>
             }

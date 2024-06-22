@@ -4,9 +4,19 @@
     overflow-x: hidden;
     background-color: rgb(250, 250, 250);
     scroll-behavior: smooth;
+    position: absolute;
 }
 
-
+.borrarFundo{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(250, 250, 250, 0.3);
+    overflow-y: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 10;
+}
 .landPageContent .headerLandPage{
     display: flex;
     align-items: center;
@@ -17,7 +27,7 @@
     top: 0;
     flex-direction: column;
     transition: all 0.3s;
-    z-index: 999;
+    z-index: 5;
     border-bottom: 1px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.1);
@@ -35,6 +45,7 @@
     font-size: 40px;
     font-family: "David libre";
     color: rgb(26, 67, 170);
+    cursor: pointer;
 }
 
 .landPageContent .headerLandPage .superior .mudarLinguagem{
@@ -43,28 +54,71 @@
 
 .mudarLinguagem{
     width: 100px;
+    height: 30px;
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(0, 255, 255);
+    padding: 5px;
+    align-items:center;
+    justify-content: end;
+    background-color: rgb(220,220,220);
+    position: relative;
+    font-weight: bolder;
 }
 
-.mudarLinguagem input[type="radio"]{
-    opacity: 0;
-    position: absolute;
-    cursor: pointer;
-    width: 50px;
-}
-.mudarLinguagem label{
-    border: 1px solid #000;
-    width: 100%;
+.mudarLinguagem button{
+    height: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    left: -20px;
+    top: 0;
+    position: absolute;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
 }
 
-.linguagemAtiva{
-    background-color: rgb(25, 99, 99)
+.mudarLinguagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
+
+.mudarLinguagem .ingles{
+    animation:forwards 0.5s ingles;
+}
+
+.mudarLinguagem .portugues{
+    animation:forwards 0.5s portugues;
+}
+
+@keyframes ingles{
+    from{
+        left: -20px;
+        
+    }
+    to{
+        left:90px;
+    }
+}
+
+@keyframes portugues{
+    from{
+        left: 90px;
+        
+    }
+    to{
+        left:-20px;
+    }
+}
+
+
+.mudarLinguagem .inglesE{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
 
 .headerLandPage .navBarLandPage{
     width: 100%;
@@ -92,7 +146,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: clamp(1rem, 1.5vw, 2.5rem)
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    cursor: pointer;
 }
 
 .navBarLandPage nav ul li a:before{
@@ -110,22 +165,22 @@
     width: 100%;
 }
 
-#bemVindo, #porqueAequitas, #feedBack, #planos, #futuro, #contatos{
+#bemVindo, #porqueAequitas, #feedBack, #planos, #futuro, #contato{
     width: 100%;
     height: 100%;
 }
 #bemVindo{
     display: flex;
-    padding: 5% 2% 5% 5%;
-    justify-content: center;
+    padding: 0 0 0 5%;
 }
 
 .textoBemVindo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 45%;
+    z-index: 1;
+    margin: auto 0;
 
 }
 
@@ -156,109 +211,120 @@
     color: rgb(255, 255, 255);
 }
 
-#bemVindo .imagemBemVindo{
-    width: 100vw;
+
+#bemVindo  img{
+    width: 50%;
+    height: 70%;
 }
 
-#bemVindo .imagemBemVindo img{
-    width: 100%;
-    height: 100%;
+#bemVindo  img:last-child{
+    position: absolute;
+    right: 0;
+    bottom:-5%;
 }
 
-#bemVindo .imagemBemVindo img:last-child{
-    position: relative;
-    bottom: 95%;
-    left: 0;
-}
-
-#bemVindo .imagemBemVindo img:first-child{
-    position: relative;
-    left: 5%;
+#bemVindo img:nth-child(2){
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    bottom: 0
 }
 
 #porqueAequitas{
     display: flex;
-    align-items: center;
-    padding: 10% 0;
     flex-direction: column;
 }
 
-#porqueAequitas h2{
+.containerPorqueAequitas{
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.containerPorqueAequitas h2{
     font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
-    margin: 5vh 0 0 0;
 }
 
-#porqueAequitas p{
+.containerPorqueAequitas p{
     font-size:clamp(1.3rem, 5vw - 7vh, 3rem);
 }
 
-#porqueAequitas .porqueCardContainer{
+.porqueCardContainer{
     width: 100%;
     padding: 0 20px;
     display: flex;
-    margin: 7vh 0 0 0;
+    margin: 10vh 0 0;
 }
 
 
 
-#porqueAequitas .porqueCardContainer .cardPorque{
-    min-width: 200px;
-    max-width: 400px;
-    min-height: 200px;
-    max-height: 400px;
-    height: 100%;
+.cardPorque{
+    min-width: 100px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: calc(5vh - 10px);
     margin: 0 auto;
 }
 
-#porqueAequitas .porqueCardContainer .cardPorque img{
+.cardPorque img{
     width: 25%;
 }
 
-#porqueAequitas .porqueCardContainer .cardPorque p{
+.cardPorque p{
     font-size: 26px;
     font-weight: bold;
 }
 
-#porqueAequitas .porqueCardContainer .cardPorque .barra{
+.barra{
     border: 4px solid rgb(26, 67, 170);
     width: 30%;
 }
 
-#porqueAequitas .porqueCardContainer .cardPorque .escrita p{
+.escrita p{
     font-size: 20px;
     text-align: justify;
     font-weight: normal;
 }
 
-#feedBack{
-    background-image: url("../../images/feedBack.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.containerFeedBack{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    width: 100%;
     align-items: center;
-    padding: 10% 0;
+    height: 100%;
 }
 
-#feedBack h2{
+.escritaFeedBack{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0 0 0;
+}
+.escritaFeedBack h2{
     font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
 }
 
-#feedBack p{
+.escritaFeedBack p{
     font-size:clamp(1.3rem, 5vw - 7vh, 3rem);
 }
 
-#feedBack .containerFeedBack{
+.containerCardFeedBack{
     width: 100%;
     display: flex;
-    margin: 15vh 0 0 0;
+    margin: 5vh 0 auto 0;
+    z-index: 1;
 }
 
-#feedBack .containerFeedBack .cardFeedBack{
+.containerCardFeedBack .cardFeedBack{
     max-width: 400px;
     min-width: 200px;
     width: 100%;
@@ -271,26 +337,403 @@
     margin: 0 auto;
     height: calc(50vh - 20px);
     text-align: justify;
+    gap: 10px;
 }
 
-#feedBack .containerFeedBack .cardFeedBack img{
+.cardFeedBack img{
     width: 75px;
     height: 75px;
     border-radius: 100%;
 }
 
-#feedBack .containerFeedBack .cardFeedBack h3{
-    font-size: clamp(1.5rem, 2vw, 3rem);
+.cardFeedBack h3{
+    font-size: clamp(1.5rem, 1vw + 1vh, 3rem);
     color: rgb(255, 255, 255);
 }
 
-#feedBack .containerFeedBack .cardFeedBack p{
-    font-size: clamp(.7rem, 1.3vw, 3rem);
+.cardFeedBack p{
+    font-size: clamp(.7rem, 1vw + .5vh, 3rem);
     color: rgb(255, 255, 255);
+}
+
+.containerFeedBack img:nth-child(3){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 #planos{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    padding: 8% 10% 0;
 }
+#planos h2{
+    font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
+}
+
+#planos p:nth-child(2){
+    font-size:clamp(1.2rem, 8vw - 14.5vh, 3rem);
+}
+
+
+.planos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+}
+
+.planos h4{
+    color: rgb(44, 122, 237);
+    font-size: clamp(1rem, 3vw - 3vh, 2.3rem)
+}
+
+.planos h4 span{
+    color: rgb(61, 63, 63);
+    font-size: clamp(.5rem, 2vw - 2.3vh, 1rem);
+}
+
+.planos h3{
+    font-size: clamp(1rem, 3vw - 2vh, 2.3rem)
+}
+
+.planosCard{
+    max-width: 350px;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    border-radius: 20px;
+    height:80%;
+    border: 1px solid rgb(61, 63, 63);
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.08);
+}
+
+.planosCard p{
+    font-size:clamp(.7rem, 1.3vh + .5vw, 2rem);
+    width: 100%;
+}
+.escolhido{
+    background-color: rgb(7, 22, 63);
+    color:rgb(255, 255, 255);
+    height: 90%;
+}
+.escolhido h4{
+    color:rgb(255, 255, 255)
+}
+.escolhido h4 span{
+    color:rgb(255, 255, 255)
+}
+.beneficios{
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+.beneficios .circuloCheckup{
+    background: linear-gradient(90deg, rgba(33,118,193,1) 24%, rgba(26,160,184,1) 54%, rgba(39,190,154,1) 90%);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size:clamp(.7rem, 1.3vh + .5vw, 2rem);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    position: absolute;
+}
+
+.escolhido .beneficios  .circuloCheckup{
+    background: aliceblue;
+    color: rgb(44, 122, 237);
+}
+
+.beneficioDetalhe p{
+    text-align:left;
+    font-size:clamp(.7rem, 1.3vh + .5vw, 2rem);
+    width: 100%;
+    padding: 0 0 0 calc(2vw + 2vh);
+}
+
+#planos button{
+    width: 30%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 22, 63);
+    border-radius: 50px;
+    height: 10%;
+    margin: 2vh 0 0 0;
+    cursor: pointer;
+    box-shadow: 1px 10px 4px rgba(0, 0, 0, 0.07)
+}
+
+#futuro{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.futuroOpcao{
+    width: 100%;
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.futuroOpcao input[type="radio"]{
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+.futuroOpcao div{
+    display: flex;
+}
+.futuroOpcao span{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(7, 22, 63);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.futuroOpcao span::before {
+    content: "";
+}
+.futuroOpcao input[type="radio"]:checked + span{
+    background-color: rgb(26,67, 170);
+}
+
+
+.containerFuturoUm,
+.containerFuturoDois,
+.containerFuturoTres,
+.containerFuturoQuatro{
+    width: 100%;
+    justify-content: center;
+    display:flex;
+    height: 100%;
+    padding: 7% 0 0 0;
+    flex-direction: column;
+    position: absolute;
+}
+
+.conteudoFuturoUm{
+    width: 70%;
+    background-color: rgb(26, 67, 170);
+    height: 70%;
+    border-radius: 0 300px 300px 0;
+    color: rgb(255, 255, 255);
+    padding: 4% 8% 0 2%;
+}
+.conteudoFuturoUm h2{
+    font-size: clamp(1.7rem, 2vw + 2vh, 3rem);
+}
+
+.conteudoFuturoUm p{
+    font-size: clamp(1rem, 1vw + 1.5vh, 3rem);
+    margin: 2.3vh 0 0 0;
+}
+
+.containerFuturoUm img{
+    width: 50%;
+    height: 80%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.containerFuturoDois{
+    justify-items: end;
+}
+.conteudoFuturoDois{
+    width: 70%;
+    background-color: rgb(7, 22, 63);
+    height: 70%;
+    border-radius: 300px 0 0 300px;
+    align-self: flex-end;
+    color: rgb(255, 255, 255);
+    padding: 4% 2% 0 8%;
+}
+.conteudoFuturoDois h2{
+    font-size: clamp(1.7rem, 2vw + 2vh, 3rem);
+    display: flex;
+    justify-content: center;
+}
+
+.conteudoFuturoDois p{
+    font-size: clamp(1rem, 1vw + 1.5vh, 3rem);
+    margin: 2.3vh 0 0 0;
+}
+
+.containerFuturoDois img{
+    width: 50%;
+    height: 80%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.containerFuturoDois img:nth-child(3){
+    top: 7%;
+    left: 0;
+}
+
+.containerFuturoDois img:nth-child(2){
+    width: 40%;
+    left: 3%;
+    z-index: 1;
+}
+
+.containerFuturoTres{
+    padding: 7% 0 4%;
+    align-items: end;
+}
+
+.conteudoFuturoTres{
+    width: 90%;
+    background-color: rgb(26, 67, 170);
+    height: 90%;
+    border-radius: 300px 100px 100px 300px;
+    color: rgb(255, 255, 255);
+    padding: 4% 2% 0 40%;
+    margin: 0 auto;
+}
+.conteudoFuturoTres h2{
+    font-size: clamp(1.7rem, 2vw + 2vh, 3rem);
+}
+
+.conteudoFuturoTres p{
+    font-size: clamp(1rem, 1vw + 1.5vh, 3rem);
+    margin: 2.3vh 0 0 0;
+}
+
+.containerFuturoTres img{
+    width: 45%;
+    height: 70%;
+    left: 0;
+    bottom: 10%;
+    position: absolute;
+}
+
+.containerFuturoQuatro{
+    justify-content: flex-start;
+}
+
+.conteudoFuturoQuatro{
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   color: rgb(255, 255, 255);
+   align-items: center;
+   width: 40%;
+   height: 100%;
+   padding: 0 0 5% 3%;
+}
+.conteudoFuturoQuatro h2{
+    font-size: clamp(1.7rem, 2vw + 2vh, 3rem);
+}
+
+.conteudoFuturoQuatro p{
+    font-size: clamp(1rem, .8vw + 1.2vh, 3rem);
+    margin: auto 0 0 0;
+    text-align: justify;
+    
+}
+
+.conteudoFuturoQuatro ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 0 0 0 5%;
+    margin: auto 0;
+    font-size: clamp(1rem, .8vw + 1.2vh, 3rem);
+}
+
+.conteudoFuturoQuatro ul li{
+}
+
+.conteudoFuturoQuatro ul li span{
+   font-weight: bold;
+}
+.containerFuturoQuatro img:nth-child(3){
+    width: 53%;
+    height: 100%;
+    right: 0;
+    bottom: 3%;
+    position: absolute;
+}
+.containerFuturoQuatro img:nth-child(2){
+    width: 100%;
+    height: 85%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+
+.contatoContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.contatoContainer h2{
+    font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
+    margin: auto 0 0 0;
+}
+
+.escritaContato form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.escritaContato{
+    width: 40%;
+    margin: auto 10% auto auto;
+}
+
+.escritaContato input{
+    width: 100%;
+    height: calc(5vw - 4vh);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(78, 78, 78);
+}
+
+.escritaContato input:nth-child(3){
+    height: calc(20vh - 2vw);
+}
+
+.escritaContato button{
+    background-color: rgb(26, 67, 170);
+    border: 2px solid rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
+    height: calc(10vh - 2vw);
+    border-radius: 30px;
+}
+
+.contatoContainer img{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    height: 60%;
+}
+

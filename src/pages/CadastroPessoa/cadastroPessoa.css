@@ -1,11 +1,10 @@
 .containerCadastroPessoa{
     background-color: rgb(240, 240, 240);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    overflow-x: hidden;
     position: absolute;
-    overflow: hidden;
 }
 .containerCadastroPessoa a{
     text-decoration: none;
@@ -25,28 +24,65 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+
 .formularioCadastroPessoa{
     width: 100%;
     height: 100%;
-
+    display: flex;
+    padding: 10px;
 }
 
 .formularioCadastroPessoa form{
-    width: 70%;
-    height: 100%;
+    width:60%;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-.formularioCadastroPessoa form button:hover, .formularioCadastroPessoa form input[type="checkbox"]{
-    cursor: pointer;
+.cadastroPessoa{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0 20px
+}
+
+.labelContentPessoa{
+    display: flex;
+    width:48.3%;
+    flex-direction: column;
+    position: relative;
+}
+
+.labelContentPessoa button{
+    position:absolute;
+    width: 30px;
+    bottom: calc(3vh);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    right: 0;
+}
+
+.labelContentPessoa:nth-child(1),
+.labelContentPessoa:nth-child(2),
+.labelContentPessoa:nth-child(3),
+.labelContentPessoa:nth-child(4),
+.labelContentPessoa:nth-child(5){
+    width: 100%;
+}
+.labelContentPessoa span{
+    font-size: clamp(.5 rem, 1vw * .3vh, 1.5rem);
+    white-space: nowrap;
 }
 .formularioCadastroPessoa form input{
-    width: 40%;
+    width: 100%;
     height: calc(7vh - 10px);
     margin: 1.5vh 1.5vw 1.5vh 0;
     border-radius: 10px;
     padding: 0 0 0 5px;
     color: rgb(0, 0, 0);
 }
+
 .redesPessoa{
     display: flex;
     flex-direction: column;
@@ -58,15 +94,16 @@ input[type=number] {
 
 .itensPessoa{
     display: flex;
-    width: 70%;
+    width: 100%;
     align-items:center;
     justify-content: center;
     gap: 30px;
     margin: 1.5vh 0 ;
+    z-index: 1;
 }
 
 .itensPessoa button{
-    width: 30%;
+    width: 100%;
     display: flex;
     height: calc(5vh + 5px);
     display: flex;
@@ -75,16 +112,15 @@ input[type=number] {
     gap:1vw;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 
-.juncaoEnderecoDois{
-    display: none;
-}
+
 .juncaoLabelCheckboxPessoa{
     display: flex;
-    align-items: center;
-    width: 80%;
-    height: calc(5vh + 5px);
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
     margin: 0 0 2vh 0;
 }
 
@@ -100,31 +136,39 @@ input[type=number] {
 }
 
 .finalFormPessoa{
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
+.finalFormPessoaPessoa label{
+    margin: 1vh 0 0 0;
+    font-size: clamp(10px, 1vw, 16px);;
+
+}
+
+
 #cadastrarPessoa{
-    width: 50%;
+    width: 80%;
     height: calc(7vh + 5px);
     border-radius: 20px;
     font-size: clamp(13px, 2vw - 5px, 20px);
     font-weight: bold;
     background-color: rgb(26, 67, 170);
     color: rgb(240, 240, 240);
+    cursor:pointer
 }
 
-.finalFormPessoaPessoa label{
-    margin: 1vh 0 0 0;
-    font-size: clamp(10px, 1vw, 16px);;
-}
+
 
 #waveCadastroPessoa, #personaCadastroPessoa{
     position: absolute;
-    bottom: 0;
+    bottom: -13.5%;
     right: 0;
+    z-index: 0;
 }
 
 #waveCadastroPessoa{
@@ -133,72 +177,17 @@ input[type=number] {
 }
 
 #personaCadastroPessoa{
-    width: 30vw;
-    height: 90vh;
-    right: 10%;
-    bottom: 1%;
+    width: 50%;
+    height: 65%;
 }
 
 
 .direitos{
     position: absolute;
-    bottom: 0%;
+    bottom: -13%;
     right: 50%;
     transform: translate(50%, -25%);
     color: rgb(170, 170, 170);
     font-size: clamp(8px, 1vw + 5px, 13px);
 }
 
-
-
-
-@media(max-width: 600px){
-    
-    #waveCadastroPessoa, #personaCadastroPessoa{
-        display: none;
-    }
-
-    .formularioCadastroPessoa form{
-        width: 100%;
-    }
-
-    .formularioCadastroPessoa form input{
-        width: 100%;
-        height: calc(7vh - 20px);
-        margin: 1vh 1vw 1vh 0;
-    }
-
-    .juncaoEnderecoDois{
-        display: flex;
-    }
-
-    .juncaoEndereco{
-        display: none;
-    }
-
-    .itens{
-        width: 100%;
-    }
-    .itens button{
-        width: 100%;
-    }
-
-    .finalFormPessoa{
-        width: 100%;
-    }
-    #cadastrarPessoa{
-        width: 70%;
-        height: calc(7vh - 15px);
-    }
-
-    .juncaoLabelCheckboxPessoa{
-        width: 100%;
-        height: calc(5vh + 5px);
-    }
-
-    .juncaoLabelCheckboxPessoa input[type="checkbox"]{
-        height: 15px;
-        width: 15px;
-        margin: 0 3vw 0 0;
-    }
-}
