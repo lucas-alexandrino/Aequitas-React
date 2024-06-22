@@ -1,4 +1,7 @@
-import HeaderPessoa from '../HeaderPessoa/HeaderPessoa'
+
+
+import HeaderEmpressa from '../HeaderEmpressa/HeaderEmpressa'
+
 import './DescobrindoTalentos.css'
 import talentos_imagem from "../../images/mulher.png"
 import imagem_1 from "../../images/divulgacao.png"
@@ -6,19 +9,25 @@ import imagem_2 from "../../images/recrutamento.png"
 import imagem_3 from "../../images/selecao.png"
 import imagem_4 from "../../images/gestao.png"
 import soft from "../../images/preparacao.png"
-import diversidade from "../../images/Diversidade.png"  
+
+import diversidade from "../../images/Diversidade_talento.png"  
+
 export default function DescobrindoTalentos(){
     return (
         <>
 
-<HeaderPessoa/>
+
+<HeaderEmpressa/>
+
         <div className='cabecalho_principal'>
             <div className='cabecalho_imagem'><img src={talentos_imagem} alt="" /></div>
             <div className='cabecalho_info'>
                 <h2>Descobrimos talentos para impactar empresas</h2>
                 <p>Publique uma vaga de emprego e atraia os currículos mais qualificados.</p>
                 
+
                 <button className='btn-vagas' type='submit'><h3>Anunciar Vagas</h3></button>
+
             </div>
         </div>
 
