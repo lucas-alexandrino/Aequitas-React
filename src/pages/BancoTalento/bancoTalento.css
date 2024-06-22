@@ -107,6 +107,10 @@ body {
     font-family: "inter", arial ,sans-serif;
 }
 
+.vagaCard:hover{
+    transform: scale(1.05);
+}
+
 .vagaCard {
     background-color: #fff;
     border: 1px solid #fff;
