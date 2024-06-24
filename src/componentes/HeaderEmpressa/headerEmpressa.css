@@ -144,22 +144,6 @@
 }
 
 
-.ativo span:nth-child(1){
-    top: 25%;
-    right: 0%;
-    transform:translate(25%, 50%) rotate(45deg);
-}
-
-.ativo span:nth-child(3){
-    top:25%;
-    right: 0%;
-    transform:translate(25%, -150%) rotate(-45deg);
-}
-
-.ativo span:nth-child(2){
-    opacity: 0;
-}
-
 @media(max-width: 600px){
     .logoUm{
         display: none;

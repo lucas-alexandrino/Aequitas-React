@@ -20,11 +20,11 @@ body {
     transform: translate(-15vw, -35vh);
 }
 
-.perfilOracle, p{
+
+.empresaNome {
     font-weight: bolder;
     margin-left: 10px;
     font-size: 20px;
-    
 }
 .logoEmpresa{
     width: 110px;
@@ -62,7 +62,8 @@ body {
 .pesquisarVaga{
     transform: translate(0vw, -13vh);
 }
-.pesquisarVaga, form {
+
+.pesquisarVaga{
     display: flex; 
     max-width: 650px; 
     margin: 0 auto; 
@@ -71,24 +72,24 @@ body {
     border-radius: 0px 50px 50px 0px; 
     box-shadow: 0 2px 5px rgb(0 0 0 / 58%);
   }
-  
-  
-  .buscar, input[type="text"] {
+
+  .buscar {
     flex: 1; 
     background-color: #ffffff00;
     padding: 10px; 
     font-size: 16px; 
     border: none; 
   }
-  
- 
-  .btnBuscar, button[type="submit"] {
+
+
+.btnBuscar {
     padding: 10px 20px; 
     background-color: #07163F; 
     color: white; 
     border: none; 
     border-radius: 100px;
-    cursor: pointer; 
+    cursor: pointer;
+     
   }
   
   

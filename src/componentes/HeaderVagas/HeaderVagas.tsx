@@ -1,8 +1,7 @@
-import "./headerBanco.css"
-
-import { FiMenu } from "react-icons/fi";
-import AELogo from "../../images/davy.jpg"
+import React from "react";
 import { useState } from "react";
+import "./HeaderVagas.css"
+import "../perfil/Perfil.css";
 import { FaBell, FaTrash } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
 import { GoGear, GoSearch } from "react-icons/go";
@@ -14,16 +13,17 @@ import { IoDocumentText } from "react-icons/io5";
 import { PiClockCounterClockwiseLight } from "react-icons/pi";
 import { TbHelpCircleFilled, TbClipboardCheck } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
-import { Link } from "react-router-dom";
 
-export default function HeaderBanco() {
+
+export default function Header() {
+    const [menuAtivo, setMenuAtivo] = useState(false);
     const [perfilAtivo, setPerfilAtivo] = useState(false);
 
 
     // Função para colocar e remover painel lateral
     const ocultarPainelLateral = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = event.target as HTMLElement;
-        if (perfilAtivo && !target.closest('.painelRecrutador') && !target.closest('.menuHamburguer')) {
+        if (perfilAtivo && !target.closest('.painelLateral') && !target.closest('.menuHamburguer')) {
             setPerfilAtivo(false);
         }
     };
@@ -32,38 +32,54 @@ export default function HeaderBanco() {
         <>
             { }
             <div onClick={ocultarPainelLateral} className="app">
-                <div className="background">
+                <div className="headerVagaContainer">
 
-                    <div className="headerBancoContainer">
-                    <Link to="/empresa">
-                        <h1 className="nome">
-                            ÆQUITAS
-                        </h1>
-                        </Link>
-                        <div className="forBusiness">
-                            <h6 className="nome2">
-                                For Business
-                            </h6>
+                    <h1 className="logoHeaderPessoa logoUm">
+                        ÆQUITAS
+                    </h1>
+                    <h1 className="logoHeaderPessoa logoDois">
+                        Æ
+                    </h1>
+                    <div className="pesquisa">
+                        <div className="campo">
+                            <GoSearch />
+                            <input type="text" placeholder="Digite um cargo ou empresa"></input>
                         </div>
-                        <div className="menubar">
-                            <li className="planos">Planos</li>
-                            <li className="pginicial">Pagina Inicial</li>
-                            <li><button className="notifi"><FaBell size="25px" /></button></li>
-                            <img className="AELogo" src={AELogo} alt="Logo empresa" width={70} height={40} />
-                            <li className="nomeEmpresa">Breno Jones</li>
-                            <button className="menubutton"  onClick={() => { setPerfilAtivo(!perfilAtivo); }}><FiMenu size="25px" /></button>
+
+                        <div className="campo1">
+
+                            <input type="text" placeholder="Digite uma cidade ou estado"></input>
+                            <button> Buscar Vagas</button>
                         </div>
                     </div>
 
+
+                    <div className="conteudoPessoa">
+                        <button><FaBell size="30px" color="#fff" /></button>
+                        <img src="../src/images/Fotousuario.png" alt="foto" ></img>
+                        <p className="nomeUsuario">Maria Marques</p>
+                        <div className={`menuHamburguer ${menuAtivo ? 'ativo' : ''}`} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div className="titulos">
+                    <h1 className="tituloVagas"> Vagas que podem te interessar</h1>
+                    <h5 className="maisVagas"> <a href="null">Veja mais vagas</a> </h5>
                 </div>
 
-                <div className={`painelRecrutador  ${perfilAtivo ? 'ativo' : ''}`} >
 
-                    <div className="header-perfil" >
+                <div className={`painelLateral ${perfilAtivo ? 'ativo' : ''}`}>
+
+                    <div className="header-perfil">
                         <img id="foto-perfil" src="../src/images/Fotousuario.png" alt="foto" ></img>
                         <div className="perfil">
-                            <h4> Breno Jones</h4>
-                            <p>breno.jones@gmail.com</p>
+                            <h4> Maria Marques</h4>
+                            <p>maria.marques@gmail.com</p>
                         </div>
 
                     </div>
@@ -71,9 +87,9 @@ export default function HeaderBanco() {
                         <div className="body-perfil">
 
                             <h4><a href="#meu-perfil"> <span className="icon-margin"><BiHome size={25} /></span>Meu Perfil</a></h4>
-                            <h4><a href="#meu-curriculo"> <span className="icon-margin"><IoDocumentText size={25} /></span> Currículos em aberto</a></h4>
-                            <h4><a href="#minhas-vagas"><span className="icon-margin"><PiClockCounterClockwiseLight size={25} /></span>Vagas Adicionadas</a></h4>
-                            <h4><a href="#alerta-vagas"> <span className="icon-margin"><HiMail size={25} /></span>Alerta de Currículos</a></h4>
+                            <h4><a href="#meu-curriculo"> <span className="icon-margin"><IoDocumentText size={25} /></span> Meu currículo</a></h4>
+                            <h4><a href="#minhas-vagas"><span className="icon-margin"><PiClockCounterClockwiseLight size={25} /></span>Minhas vagas</a></h4>
+                            <h4><a href="#alerta-vagas"> <span className="icon-margin"><HiMail size={25} /></span>Alerta de Vagas</a></h4>
 
                         </div>
                         <div className="config-opcoes">
@@ -92,7 +108,9 @@ export default function HeaderBanco() {
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </>
     );
 }

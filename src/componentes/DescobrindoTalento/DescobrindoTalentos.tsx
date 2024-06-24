@@ -1,9 +1,8 @@
 
-
-import HeaderEmpressa from '../HeaderEmpressa/HeaderEmpressa'
+import HeaderRecrutador from '../HeaderRecrutador/HeaderRecrutador.tsx'
 
 import './DescobrindoTalentos.css'
-import talentos_imagem from "../../images/mulher.png"
+import talentos_imagem from "../../images/imagem_header_empresa.png"
 import imagem_1 from "../../images/divulgacao.png"
 import imagem_2 from "../../images/recrutamento.png"
 import imagem_3 from "../../images/selecao.png"
@@ -17,7 +16,7 @@ export default function DescobrindoTalentos(){
         <>
 
 
-<HeaderEmpressa/>
+<HeaderRecrutador/>
 
         <div className='cabecalho_principal'>
             <div className='cabecalho_imagem'><img src={talentos_imagem} alt="" /></div>

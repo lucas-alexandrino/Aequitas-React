@@ -1,4 +1,5 @@
-import "./headerBanco.css"
+import "./HeaderRecrutador.css"
+import '../perfil/Perfil.css'
 
 import { FiMenu } from "react-icons/fi";
 import AELogo from "../../images/davy.jpg"
@@ -17,6 +18,7 @@ import { HiMail } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 export default function HeaderBanco() {
+
     const [perfilAtivo, setPerfilAtivo] = useState(false);
 
 
@@ -31,30 +33,28 @@ export default function HeaderBanco() {
     return (
         <>
             { }
-            <div onClick={ocultarPainelLateral} className="app">
-                <div className="background">
 
-                    <div className="headerBancoContainer">
+
+            <div onClick={ocultarPainelLateral} className="app">
+                <div className="headerBancoContainer">
                     <Link to="/empresa">
                         <h1 className="nome">
                             ÆQUITAS
                         </h1>
-                        </Link>
-                        <div className="forBusiness">
-                            <h6 className="nome2">
-                                For Business
-                            </h6>
-                        </div>
-                        <div className="menubar">
-                            <li className="planos">Planos</li>
-                            <li className="pginicial">Pagina Inicial</li>
-                            <li><button className="notifi"><FaBell size="25px" /></button></li>
-                            <img className="AELogo" src={AELogo} alt="Logo empresa" width={70} height={40} />
-                            <li className="nomeEmpresa">Breno Jones</li>
-                            <button className="menubutton"  onClick={() => { setPerfilAtivo(!perfilAtivo); }}><FiMenu size="25px" /></button>
-                        </div>
+                    </Link>
+                    <div className="forBusiness">
+                        <h6 className="nome2">
+                            For Business
+                        </h6>
                     </div>
-
+                    <div className="menubar">
+                        <li className="planos">Planos</li>
+                        <li className="pginicial">Pagina Inicial</li>
+                        <li><button className="notifi"><FaBell size="25px" /></button></li>
+                        <img className="AELogo" src={AELogo} alt="Logo empresa" width={70} height={40} />
+                        <li className="nomeEmpresa">Breno Jones</li>
+                        <button className="menubutton" onClick={() => { setPerfilAtivo(!perfilAtivo); }}><FiMenu size="25px" /></button>
+                    </div>
                 </div>
 
                 <div className={`painelRecrutador  ${perfilAtivo ? 'ativo' : ''}`} >
@@ -92,6 +92,8 @@ export default function HeaderBanco() {
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </>
     );

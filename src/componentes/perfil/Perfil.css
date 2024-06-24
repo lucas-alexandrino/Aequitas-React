@@ -1,0 +1,100 @@
+/* Perfil do usuario */
+
+.painelLateral {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Fora da tela inicialmente */ 
+    width: 350px;
+    height: 100%;
+    color: #a1a1a1;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.4s;
+    background: linear-gradient(180deg, #1A43AA 15%, white 15%);
+    z-index: 999; /* Para sobrepor ao conteúdo da página */
+}
+
+.painelLateral.ativo {
+    right: 0; /* Traz o painel para a tela */
+}
+
+/* Perfil do Recrutador */
+
+.painelRecrutador {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Fora da tela inicialmente */ 
+    width: 350px;
+    height: 100%;
+    color: #a1a1a1;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.4s;
+    background: linear-gradient(180deg, #07163F 15%, white 15%);
+    z-index: 999; /* Para sobrepor ao conteúdo da página */
+}
+
+.painelRecrutador.ativo {
+    right: 0; /* Traz o painel para a tela */
+}
+
+
+.header-perfil {
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.perfil{
+    display: flex;
+    height: 15vh;  
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+#foto-perfil {
+margin: 5px 0 0 0;
+}
+
+
+
+/* contêiner todo-perfil */
+.todo-perfil {
+
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+   
+}
+
+.todo-perfil a {
+    text-decoration: none;
+    color: inherit; 
+    display: inline-flex;
+    align-items: center;
+
+
+}
+
+.todo-perfil .config-opcoes,
+.todo-perfil .ajuda-opcoes ,
+.todo-perfil .body-perfil {
+
+    height: 140px;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    line-height: 33px;
+}
+
+.icon-margin {
+    margin-right: 15px;
+
+}
+
+.todo-perfil .encerrar-sessao {
+   color: red;
+   height: 50px;
+   display: flex;
+   align-items: flex-end;
+}

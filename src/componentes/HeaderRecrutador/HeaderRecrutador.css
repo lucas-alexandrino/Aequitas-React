@@ -1,14 +1,6 @@
 
-.background{
-    background-image: url(../../images/Rectangle69.png);
-    background-size: cover;
-    /* background-position-y: -19px; */
-    width: 100vw;
-    height: 48.2vh;
-}
-
-
 .headerBancoContainer{  
+    background-color: #07163F;
     display: flex;
     color:rgb(250, 250, 250);
     padding: 0 50px;
