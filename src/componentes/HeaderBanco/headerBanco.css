@@ -17,6 +17,10 @@
     transition: all 0.3s;
 }
 
+.headerBancoContainer a {
+    width: 25%;
+}
+
 .forBusiness{
     display: flex;
     color:rgb(250, 250, 250);

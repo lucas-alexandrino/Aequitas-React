@@ -10,7 +10,6 @@ export default function BuscaVaga(){
             <HeaderVagas/>
             <Vagas/>
 
-
             </>
         )
 }

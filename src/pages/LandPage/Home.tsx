@@ -9,7 +9,7 @@ import cardPorqueTres from '../../images/cardPorqueTres.png'
 import feedBackUm from '../../images/joao.jpeg'
 import feedBackDois from '../../images/alice.jpeg'
 import feedBackTres from '../../images/ana.jpeg'
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 import EscolhaCaminho from "../../componentes/escolhaCaminho/EscolhaCaminho";
 import futuroUm from "../../images/FuturoUm.png"
 import futuroDois from "../../images/FuturoDois.png"
@@ -72,6 +72,11 @@ export default function Home() {
         const intervalo = setInterval(incrementarContador, 7000);
         return () => clearInterval(intervalo);
     }, [selectedValue]);
+
+    /* Redirecionando o Click no button de pagamentos */
+
+  
+    
 
     return (
         <>
@@ -181,17 +186,17 @@ const BemVindo = (props: any) => {
         {
             props.lingua === "pt" ? 
             <div className="textoBemVindo">
-            <h2>Bem-vindo a ÆQUITAS</h2>
+        
             <h3>ÆQUITAS: Além da igualdade.</h3>
             <p>Uma plataforma de vagas afirmativas para melhorar a empregabilidade de minorias</p>
             <div className="botoes">
-                <button type="button" className="login" onClick={() => { props.setCaminho(!props.caminho) }}>Juntar-se</button>
+                <button type="button" className="login" onClick={() => { props.setCaminho(!props.caminho) }}>Inscrever-se</button>
                 {/* <button type="button" className="login" onClick={() => { return navigate("login") }}>Login</button> */}
             </div>
             </div>
             :
             <div className="textoBemVindo">
-            <h2>Welcome to ÆQUITAS</h2>
+        
             <h3>ÆQUITAS: Beyond equality.</h3>
             <p>An affirmative vacancy platform to improve the employability of minorities</p>
             <div className="botoes">
@@ -366,6 +371,15 @@ const FeedBack = (props: any) => {
 }
 
 const Planos = (props: any) => {
+
+    /* Redirecionando Button Experimente para page pagamento   const history = useHistory();
+  onClick={redirecionarParaPagamento}
+    const redirecionarParaPagamento = () => {
+        history.push('/pagamento');
+      };
+*/
+
+   
     return (
         <>
         {
@@ -465,7 +479,7 @@ const Planos = (props: any) => {
                     </div>
                 </div>
             </div>
-            <button type="button">Experimente</button>
+        <button type="button">Experimente</button>
                             </>
                             :
                             <>

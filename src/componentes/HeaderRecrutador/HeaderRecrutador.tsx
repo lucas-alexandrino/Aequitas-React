@@ -2,7 +2,7 @@ import "./HeaderRecrutador.css"
 import '../perfil/Perfil.css'
 
 import { FiMenu } from "react-icons/fi";
-import AELogo from "../../images/davy.jpg"
+import AELogo from "../../images/breno.png"
 import { useState } from "react";
 import { FaBell, FaTrash } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
@@ -60,7 +60,7 @@ export default function HeaderBanco() {
                 <div className={`painelRecrutador  ${perfilAtivo ? 'ativo' : ''}`} >
 
                     <div className="header-perfil" >
-                        <img id="foto-perfil" src="../src/images/Fotousuario.png" alt="foto" ></img>
+                        <img className="AELogo" src="../src/images/breno.png" alt="foto" ></img>
                         <div className="perfil">
                             <h4> Breno Jones</h4>
                             <p>breno.jones@gmail.com</p>

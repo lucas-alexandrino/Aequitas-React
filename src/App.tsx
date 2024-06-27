@@ -12,6 +12,10 @@ import Login from './pages/Login/Login'
 import Home from "./pages/LandPage/Home.tsx"
 import Cursos from './componentes/Cursos/Cursos.tsx';
 import BancoTalento from './pages/BancoTalento/bancoTalento.tsx';
+import Pagamento1 from './componentes/Pagamento1/Pagamento1.tsx';
+import Pagamento2 from './componentes/Pagamento2/Pagamento2.tsx';
+import Pagamento3 from './componentes/Pagamento3/Pagamento3.tsx';
+
 // import Jogos from './jogos/jogos'
 
 function App() {
@@ -22,6 +26,7 @@ function App() {
     <BrowserRouter>
   
       <Routes> 
+
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/cursos' element={<Cursos />} />
@@ -31,6 +36,9 @@ function App() {
         <Route path='/cadastrorec' element={<CadastroEmpresa />} />
         <Route path='/empresa' element={<DescobrindoTalentos/>} />
       
+        <Route path='/pagamento' element={<Pagamento1 />} />
+        <Route path='/pagamento2' element={<Pagamento2 />} />
+        <Route path='/pagamento3' element={<Pagamento3 />} />
         </Routes>
 
 

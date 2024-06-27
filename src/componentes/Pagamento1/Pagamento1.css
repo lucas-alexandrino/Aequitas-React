@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.logo_pagamento {
+  position: absolute;
+  top: 10px; /* Ajuste conforme necessário */
+  left: 65px; /* Ajuste conforme necessário */
+  width: 220px; /* Ajuste conforme necessário */
+  height: auto; /* Para manter a proporção da imagem */
+  z-index: 2; /* Para garantir que a logo fique acima do conteúdo */
+}
+  
+.pagamentos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Para garantir que ocupe a tela inteira */
+  background-color: #1a43aa; /* Cor de fundo para visualizar o quadrado */
+}
+
+.pagamentos-quadrado {
+  width: 550px; /* Defina a largura do quadrado */
+  height: 490px; /* Defina a altura do quadrado */
+  background-color: #ffffff; /* Cor branca */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px; /* Ajuste conforme necessário */
+  position: relative;
+}
+
+.imagem-no-quadrado {
+  width: 70px; /* Defina a largura da imagem */
+  height: auto;
+  max-width: 90%; /* Ajuste conforme necessário */
+}
+
+.passo-texto {
+  margin-top: 7px; /* Espaçamento entre a imagem e o texto */
+  font-family: 'Inter', sans-serif; /* Fonte Inter */
+  font-size: 14px; /* Ajuste conforme necessário */
+  font-weight: 500; /* Peso da fonte */
+  color: #000000; /* Cor do texto */
+}
+.funcoes-texto{
+ margin-top: -7px;
+ font-family: 'Inter', sans-serif; /* Fonte Inter */
+  font-size: 30px; /* Ajuste conforme necessário */
+  font-weight: 600; /* Peso da fonte */
+  color: #000000; /* Cor do texto */
+
+}
+
+.icone-e-texto {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Espaçamento entre "PASSO 1 DE 3" e o ícone/texto */
+}
+
+.check-icon {
+  color:  #1A43AA; /* Cor do ícone */
+  font-size: 24px; /* Tamanho do ícone */
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+.texto-icone,
+.texto-icone2,
+.texto-icone3 {
+  font-family: 'Inter', sans-serif; /* Fonte Inter */
+  font-size: 16px; /* Ajuste conforme necessário */
+  font-weight: 400; /* Peso da fonte */
+  color: #000000; /* Cor do texto */
+}
+.texto-icone2 {
+    margin-right: -14px;
+  }
+  
+.check-icon3 {
+    color:  #1A43AA; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+  
+   
+  }
+  .texto-icone3 {
+    margin-right: -1px;
+    text-align: justify;
+  }
+  .botao-para-pagamentos2 {
+    display: inline-block;
+    padding: 10px 120px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1a43aa; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px; 
+  }
+  
+  .botao-para-pagamentos2:hover {
+    background-color: #0056b3; /* Altere a cor de fundo ao passar o mouse */
+  }
