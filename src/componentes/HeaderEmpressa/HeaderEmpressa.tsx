@@ -4,9 +4,9 @@ import "./headerEmpressa.css"
 import { FaBell } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-export default function HeaderEmpressa() {
+export default function HeaderEmpressa(props) {
     const [menuAtivo, setMenuAtivo] = useState(false);
-    const [login, setLogin] = useState(false);
+    const [login, setLogin] = useState(props.logada);
 
     return (
         <>

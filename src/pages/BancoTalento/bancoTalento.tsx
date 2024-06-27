@@ -1,7 +1,7 @@
 import './bancoTalento.css'
 import HeaderBanco from "../../componentes/HeaderBanco/HeaderBanco"
-import fundoOracle from "../../images/capaoracle.png"
-import logoOracle from "../../images/perfiloracle.png"
+import fundoJornal from "../../images/BJ JORNAL.png"
+import logoOracle from "../../images/image 47.png"
 import line from "../../images/Line.png"
 import stars from "../../images/stars.png"
 import star from "../../images/Star.png"
@@ -20,12 +20,12 @@ export default function BancoTalento(){
             <div className="meio">
 
                 <div className="fundo">
-                    <img src={fundoOracle} alt="Fundo Oracle" />
+                    <img src={fundoJornal} alt="Fundo Oracle" style={{ width: '850px', height:'150px'}} />
                     </div>
 
             <div className="perfilOracle">
                 <img className='logoEmpresa' src={logoOracle} alt="Perfil" />
-                <p className='empresaNome'>Oracle</p>
+                <p className='empresaNome'>BJ Jornal</p>
                 <p className="starsRate"> 4,5</p>
                 <img className="stars" src={stars} alt="Stars" />
 
@@ -49,12 +49,12 @@ export default function BancoTalento(){
 
              </div>
         <div className="vagas-container">
-            <div className="vagaCard">
+        <div className="vagaCard">
                 <div className="nota">
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Jornalista Multimídia</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -64,7 +64,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Especialista em Dados e Jornalismo</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -74,7 +74,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Produtor de Vídeo</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -84,7 +84,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Assessor de Imprensa</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -94,7 +94,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Jornalista Multimídia</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -104,7 +104,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Correspondente Internacional</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -114,7 +114,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Colunista de Opinião</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -124,7 +124,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Fotógrafo de Jornalismo</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -134,7 +134,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Editor de Notícias Online</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -144,7 +144,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Editor Chefe</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -154,7 +154,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Repórter Investigativo</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -164,7 +164,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Gestor de Comunidade</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -174,7 +174,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Tradutor de Conteúdo Jornalístico</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -184,7 +184,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Redator de Notícias Esportivas</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -194,7 +194,7 @@ export default function BancoTalento(){
                 <img src={star} alt="" />
                 <p>5,0</p>
                 </div>
-                <h2 className="vagaTitulo">Título da Vaga</h2>
+                <h2 className="vagaTitulo">Produtor de Rádio</h2>
                 <p className="vagaLocal">Localização: Cidade, Estado</p>
                 <p className="vagaDescri">Há X candidatos no banco de talentos para esta vaga!</p>
                 <a href="https://www.youtube.com/watch?v=rrTYM82lmiI" target='_blank'><button className="VagaEntrar">Entrar</button></a>
@@ -206,6 +206,7 @@ export default function BancoTalento(){
                 </div>
                 </div>
                 </div>
+
             </>
         )
 }

@@ -35,63 +35,66 @@ export default function Vagas() {
 
         <>
         
-            <Grid container direction={'row'} onClick={() => { setVagaAtiva(!vagaAtiva); }}>
+           
+        <Grid container direction={'row'} onClick={() => { setVagaAtiva(!vagaAtiva); }}>
 
-                <Grid item lg={4} md={6} sm ={12} >
-                    
-                 <div className="background_vaga"><h1> Analista de Cobrança Jr</h1>
-                 <h3><FaStar color='yellow'/> Empresa confidencial</h3>
-                 <p>São Paulo, SP</p>
-                 </div>
-                
-                    </Grid> 
-                    <Grid item lg={4} md={6} sm ={12} >
-                    
-                    <div className="background_vaga"><h1> Analista de Cobrança Jr</h1>
-                    <h3><FaStar color='yellow'/> Empresa confidencial</h3>
-                     <p>São Paulo, SP</p>
-                    </div>
-                   
-                       </Grid> 
-                       <Grid item lg={4} md={6} sm ={12} >
-                    
-                      <div className="background_vaga"><h1> Analista de Cobrança Jr</h1>
-                    <h3><FaStar color='yellow'/> Empresa confidencial</h3>
-                     <p>São Paulo, SP</p>
-                    </div>
-                   
-                       </Grid> 
+<Grid item lg={4} md={6} sm ={12} >
+    
+ <div className="background_vaga"><h1> Jornalista Multimídia</h1>
+ <h3><FaStar color='yellow'/>BJ JORNAL</h3>
+ <p>São Paulo, SP</p>
+ </div>
+
+    </Grid> 
+    <Grid item lg={4} md={6} sm ={12} >
+    
+    <div className="background_vaga"><h1> Repórter Investigativa</h1>
+    <h3><FaStar color='yellow'/> Empresa confidencial</h3>
+     <p>São Paulo, SP</p>
+    </div>
+   
+       </Grid> 
+       <Grid item lg={4} md={6} sm ={12} >
+    
+      <div className="background_vaga"><h1> Editor de Notícias Online</h1>
+    <h3><FaStar color='yellow'/> The New York Times</h3>
+     <p>Nova Iorque, EUA</p>
+    </div>
+   
+       </Grid> 
+       
+       <Grid item lg={4} md={6} sm ={12} >
+    
+       <div className="background_vaga"><h1> Especialista em Dados e Jornalismo</h1>
+    <h3><FaStar color='yellow'/> CNN</h3>
+     <p>São Paulo, SP</p>
+    </div>
+   
+       </Grid> 
+
+       <Grid item lg={4} md={6} sm ={12} >
+    
+       <div className="background_vaga"><h1>Tradutora de Conteúdo Jornalístico</h1>
+      <h3><FaStar color='yellow'/>Folha de S.Paulo</h3>
+      <p>São Paulo, SP</p>
+      </div>
+   
+       </Grid> 
+       <Grid item lg={4} md={6} sm ={12} >
+    
+       <div className="background_vaga"><h1>Repórter de Cultura e Entretenimento</h1>
+    <h3><FaStar color='yellow'/> El País</h3>
+     <p>Barcelona, ESP</p>
+    </div>
+    
                        
-                       <Grid item lg={4} md={6} sm ={12} >
-                    
-                       <div className="background_vaga"><h1> Analista de Cobrança Jr</h1>
-                    <h3><FaStar color='yellow'/> Empresa confidencial</h3>
-                     <p>São Paulo, SP</p>
-                    </div>
-                   
-                       </Grid> 
-
-                       <Grid item lg={4} md={6} sm ={12} >
-                    
-                       <div className="background_vaga"><h1> Analista de Cobrança Jr</h1>
-                      <h3><FaStar color='yellow'/> Empresa confidencial</h3>
-                      <p>São Paulo, SP</p>
-                      </div>
-                   
-                       </Grid> 
-                       <Grid item lg={4} md={6} sm ={12} >
-                    
-                       <div className="background_vaga"><h1> Analista de Cobrança Jr</h1>
-                    <h3><FaStar color='yellow'/> Empresa confidencial</h3>
-                     <p>São Paulo, SP</p>
-                    </div>
-                    
-                                       
-                       </Grid> 
-                       
+       </Grid> 
+       
 
 
-            </Grid>
+</Grid>
+
+
             
       
 

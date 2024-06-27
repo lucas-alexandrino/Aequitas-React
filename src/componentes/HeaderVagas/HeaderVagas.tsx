@@ -13,6 +13,7 @@ import { IoDocumentText } from "react-icons/io5";
 import { PiClockCounterClockwiseLight } from "react-icons/pi";
 import { TbHelpCircleFilled, TbClipboardCheck } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -86,7 +87,7 @@ export default function Header() {
                     <div className="todo-perfil">
                         <div className="body-perfil">
 
-                            <h4><a href="#meu-perfil"> <span className="icon-margin"><BiHome size={25} /></span>Meu Perfil</a></h4>
+                            <h4><Link to='/perfilusuario'><span className="icon-margin"><BiHome size={25} /></span>Meu Perfil </Link></h4>
                             <h4><a href="#meu-curriculo"> <span className="icon-margin"><IoDocumentText size={25} /></span> Meu currículo</a></h4>
                             <h4><a href="#minhas-vagas"><span className="icon-margin"><PiClockCounterClockwiseLight size={25} /></span>Minhas vagas</a></h4>
                             <h4><a href="#alerta-vagas"> <span className="icon-margin"><HiMail size={25} /></span>Alerta de Vagas</a></h4>

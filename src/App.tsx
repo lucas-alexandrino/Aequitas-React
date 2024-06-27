@@ -16,6 +16,10 @@ import Pagamento1 from './componentes/Pagamento1/Pagamento1.tsx';
 import Pagamento2 from './componentes/Pagamento2/Pagamento2.tsx';
 import Pagamento3 from './componentes/Pagamento3/Pagamento3.tsx';
 
+import PerfilUsuario from './pages/PerfilUsuario/PerfilUsuario.tsx';
+import AnunciarVagas from './pages/AnunciarVagas/AnunciarVagas.tsx';
+
+
 // import Jogos from './jogos/jogos'
 
 function App() {
@@ -39,6 +43,9 @@ function App() {
         <Route path='/pagamento' element={<Pagamento1 />} />
         <Route path='/pagamento2' element={<Pagamento2 />} />
         <Route path='/pagamento3' element={<Pagamento3 />} />
+
+        <Route path='/perfilusuario' element={<PerfilUsuario/>} />
+        <Route path='/anunciar' element={<AnunciarVagas />} />
         </Routes>
 
 

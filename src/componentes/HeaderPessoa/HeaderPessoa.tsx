@@ -14,7 +14,7 @@ export default function HeaderPessoa() {
             {
                 login ?
                     <div className="headerPessoaContainer logada">
-                        <h1 className="logoHeaderPessoa logoUm">
+                       <h1 className="logoHeaderPessoa logoUm">
                             ÆQUITAS
                         </h1>
                         <h1 className="logoHeaderPessoa logoDois">

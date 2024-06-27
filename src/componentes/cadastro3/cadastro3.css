@@ -1,0 +1,119 @@
+*{
+    align-items: center;
+    
+    }
+    
+    .main-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        
+    } 
+h1#titulo{
+        display: flex;
+        margin: auto;
+}
+.form{
+        display: flex;
+
+}
+input {
+    margin: auto;
+    width: 20vh;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0px 2px 3px teal;
+}
+input#nome-empresa {
+    margin: auto;
+    width: 40vw;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0px 2px 3px teal;
+}
+select#valorSalario {
+    width: 128%;
+    }
+         
+.tituloVaga{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+} 
+    .salario{
+        width: 42vw;
+    
+    
+    
+    } 
+    .tituloVaga{
+        display: flex;
+        justify-content: center;
+    
+    
+    } 
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 10px;
+    }
+
+   
+    .pagamentoadd{
+    
+        text-decoration: none;
+      }
+    fieldset {
+        display: flex;
+        border: none;
+    
+    }
+    input#descricao{
+        border-radius: 13px;
+        width: -webkit-fill-available;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+    input#text {
+    height: 10vw;
+    }
+    .botoes{
+        display: flex;
+        justify-content: space-between;
+    }
+    #botaoContinuar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10vw;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #001f3f;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    #botaoVoltar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10vw;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        color: #001f3f;
+        border: 1px, #001f3f;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    b{
+      display: flex;
+      align-items: center;
+    }
