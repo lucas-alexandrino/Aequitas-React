@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return(
         <>
@@ -8,11 +10,11 @@ const Footer = () => {
             <li className="lista-rodape__titulo">Institucional</li>
 
             <li className="lista-rodape__item">
-                <a href="/sobre" className="lista-rodape__link">Quem somos?</a>
+            <Link to='/sobre' className="lista-rodape__link">Quem somos?</Link>
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/" className="lista-rodape__link">Por que usar ÆQUITAS</a>
+            <Link to='/' className="lista-rodape__link">Por que usar ÆQUITAS</Link>
             </li>
 
             <li className="lista-rodape__item">
@@ -20,7 +22,7 @@ const Footer = () => {
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/" className="lista-rodape__link">Fale conosco</a>
+            <Link to='/' className="lista-rodape__link">Fale conosco</Link>
             </li>
 
             <li className="lista-rodape__item">
@@ -37,11 +39,11 @@ const Footer = () => {
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/anunciar" className="lista-rodape__link">Anunciar vagas</a>
+           <Link to='/anunciar' className="lista-rodape__link">Anunciar vagas</Link>
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/talentos" className="lista-rodape__link">Buscar candidatos</a>
+           <Link to='/talentos' className="lista-rodape__link">Buscar candidatos</Link> 
             </li>
 
             <li className="lista-rodape__item">
@@ -62,11 +64,11 @@ const Footer = () => {
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/vagas" className="lista-rodape__link">Vagas</a>
+            <Link to='/vagas' className="lista-rodape__link" >Vagas</Link> 
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/curriculo" className="lista-rodape__link">Cadastre seu currículo</a>
+            <Link to='/curriculo' className="lista-rodape__link">Cadastre seu currículo</Link>
             </li>
 
         </ul>
@@ -75,7 +77,7 @@ const Footer = () => {
             <li className="lista-rodape__titulo">Siga-nos</li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Ajuda</a>
+            <a href="#" className="lista-rodape__link">Ajuda</a>
             </li>
 
             <li className="lista-rodape__item">
@@ -83,11 +85,11 @@ const Footer = () => {
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/vagas" className="lista-rodape__link">Vagas</a>
+            <Link to='/vagas' className="lista-rodape__link" >Vagas</Link> 
             </li>
 
             <li className="lista-rodape__item">
-                <a href="/curriculo" className="lista-rodape__link">Cadastre seu currículo</a>
+             <Link to='/curriculo' className="lista-rodape__link">Cadastre seu currículo</Link>
             </li>
 
         </ul>

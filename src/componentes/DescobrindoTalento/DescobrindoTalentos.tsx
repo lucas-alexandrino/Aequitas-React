@@ -12,6 +12,7 @@ import soft from "../../images/preparacao.png"
 import diversidade from "../../images/Diversidade_talento.png"  
 import HeaderEmpressa from '../HeaderEmpressa/HeaderEmpressa.tsx'
 import { useNavigate } from 'react-router'
+import { Link } from 'react-router-dom'
 
 export default function DescobrindoTalentos(){
     const navigate = useNavigate();
@@ -121,11 +122,11 @@ export default function DescobrindoTalentos(){
             <li className="lista-rodape__titulo">Institucional</li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Quem somos?</a>
+            <Link to='/sobre' className="lista-rodape__link">Quem somos?</Link>
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Por que usar ÆQUITAS</a>
+            <Link to='/' className="lista-rodape__link">Por que usar ÆQUITAS</Link>
             </li>
 
             <li className="lista-rodape__item">
@@ -133,7 +134,7 @@ export default function DescobrindoTalentos(){
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Fale conosco</a>
+            <Link to='/' className="lista-rodape__link">Fale conosco</Link>
             </li>
 
             <li className="lista-rodape__item">
@@ -150,11 +151,11 @@ export default function DescobrindoTalentos(){
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Anunciar vagas</a>
+           <Link to='/anunciar' className="lista-rodape__link">Anunciar vagas</Link>
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Buscar candidatos</a>
+           <Link to='/talentos' className="lista-rodape__link">Buscar candidatos</Link> 
             </li>
 
             <li className="lista-rodape__item">
@@ -175,11 +176,11 @@ export default function DescobrindoTalentos(){
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Vagas</a>
+            <Link to='/vagas' className="lista-rodape__link" >Vagas</Link> 
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Cadastre seu currículo</a>
+            <Link to='/curriculo' className="lista-rodape__link">Cadastre seu currículo</Link>
             </li>
 
         </ul>
@@ -188,7 +189,7 @@ export default function DescobrindoTalentos(){
             <li className="lista-rodape__titulo">Siga-nos</li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Ajuda</a>
+            <a href="#" className="lista-rodape__link">Ajuda</a>
             </li>
 
             <li className="lista-rodape__item">
@@ -196,11 +197,11 @@ export default function DescobrindoTalentos(){
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Vagas</a>
+            <Link to='/vagas' className="lista-rodape__link" >Vagas</Link> 
             </li>
 
             <li className="lista-rodape__item">
-                <a href="#" className="lista-rodape__link">Cadastre seu currículo</a>
+             <Link to='/curriculo' className="lista-rodape__link">Cadastre seu currículo</Link>
             </li>
 
         </ul>

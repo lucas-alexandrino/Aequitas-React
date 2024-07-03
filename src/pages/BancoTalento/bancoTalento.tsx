@@ -35,7 +35,7 @@ export default function BancoTalento(){
             </div>
             <div className="abas">
                 <li className="abasconfig" >Visão Geral</li>
-                <li className="abasconfig"><a href="/anunciar">Anunciar Vagas</a></li>
+                <li className="abasconfig"><Link to='/anunciar'>Anunciar Vagas</Link></li>
                 <li className="abasconfig">Candidatos</li>
                 <li className="abasconfig">Vagas</li>
                 <li className="abasconfig">Mensagens</li>

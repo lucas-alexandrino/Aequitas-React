@@ -9,6 +9,7 @@ import { IoSchool } from "react-icons/io5";
 import MiniCurriculo from '../../componentes/MiniCurriculo/MiniCurriculo.tsx';
 
 import foto_maria from '../../images/fotomaria.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -51,9 +52,9 @@ export default function PerfilUsuario(){
                 <div className='curriculos'>
                     <div className="curriculo1">
 
-                   <a href="/curriculo" > <MiniCurriculo
+                  <Link to='/curriculo'> <MiniCurriculo
                     titulo="Currículo AEquitas"
-                    /> </a></div>
+                    /></Link></div>
                     <div className="curriculo2">
                     <MiniCurriculo 
 

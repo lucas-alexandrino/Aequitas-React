@@ -95,7 +95,7 @@ export default function HeaderEmpressa(props: HeaderEmpresaProps) {
                         <div className="body-perfil">
                             <h4><a href="#meu-perfil"> <span className="icon-margin"><BiHome size={25} /></span>Meu Perfil</a></h4>
                             <h4><a href="#meu-curriculo"> <span className="icon-margin"><IoDocumentText size={25} /></span> Currículos em aberto</a></h4>
-                            <h4><a href="/talentos"><span className="icon-margin"><PiClockCounterClockwiseLight size={25} /></span>Vagas Adicionadas</a></h4>
+                            <h4><Link to='/talentos'><span className="icon-margin"><PiClockCounterClockwiseLight size={25} /></span>Vagas Adicionadas</Link></h4>
                             <h4><a href="#alerta-vagas"> <span className="icon-margin"><HiMail size={25} /></span>Alerta de Currículos</a></h4>
                         </div>
 
@@ -112,7 +112,7 @@ export default function HeaderEmpressa(props: HeaderEmpresaProps) {
                         </div>
 
                         <div className="encerrar-sessao">
-                            <h3><a href="/login">  <span className="icon-margin"><ImExit size={20} /></span>Encerrar sessão</a></h3>
+                        <h3><Link to='/login'> <span className="icon-margin"><ImExit size={20} /></span>Encerrar sessão</Link> </h3>
                         </div>
                     </div>
                 </div>
