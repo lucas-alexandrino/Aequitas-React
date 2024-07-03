@@ -1,12 +1,10 @@
-import HeaderPessoa from "../../componentes/HeaderPessoa/HeaderPessoa";
+
 import './QuemSomos.css'
 import minorias from '../../images/minoriasunidas.png'
 import Titulo from "../../componentes/Titulo/titulo";
 import equidade from '../../images/equidade.png'
 import significado from '../../images/significadoAE.png'
-import logos from '../../images/logos.png'
-import participantes1 from  '../../images/participantes1.png'
-import participantes2 from '../../images/participantes2.png'
+
 import Membro from "../../componentes/Membros/Membros";
 import bruno from '../../images/Bruno.png'
 import debora from '../../images/debora.png'

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Pagamento2.css';
 import { Link } from 'react-router-dom'; // Importe o Link do React Router
 

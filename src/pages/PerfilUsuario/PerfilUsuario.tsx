@@ -1,6 +1,6 @@
 import HeaderPessoa from '../../componentes/HeaderPessoa/HeaderPessoa'
 import './PerfilUsuario.css'
-import foto_usuario from '../../images/Foto usuário.png'
+
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { GrMapLocation } from "react-icons/gr";

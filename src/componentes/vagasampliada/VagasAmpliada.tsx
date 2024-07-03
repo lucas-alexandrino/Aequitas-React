@@ -1,8 +1,8 @@
-import React from "react";
+
 import { useState } from "react";
 import "./VagasAmpliada.css";
-import { Box, Container, Grid, InputLabel, MenuItem, Select } from "@mui/material";
-import { FaStar } from "react-icons/fa6";
+import {  Grid} from "@mui/material";
+
 import { FaBuilding } from "react-icons/fa";
 import { IoIosShareAlt } from "react-icons/io";
 

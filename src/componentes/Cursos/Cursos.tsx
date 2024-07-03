@@ -1,10 +1,8 @@
 import './Cursos.css';
-import { IoPerson } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
+
 import { FaFingerprint } from "react-icons/fa";
 import { FaAddressCard } from "react-icons/fa";
-import { BsFillTelephoneFill } from "react-icons/bs";
+
 import logo from "../../images/Logo_aequitas.png";
 
 function Cursos() {

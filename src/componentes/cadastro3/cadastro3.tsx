@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './cadastro3.css';
 //import { FaLongArrowAltLeft } from "react-icons/fa";
 //import { FaLongArrowAltRight } from "react-icons/fa";

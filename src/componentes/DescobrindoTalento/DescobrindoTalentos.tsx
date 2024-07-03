@@ -1,5 +1,5 @@
 
-import HeaderRecrutador from '../HeaderRecrutador/HeaderRecrutador.tsx'
+
 
 import './DescobrindoTalentos.css'
 import talentos_imagem from "../../images/imagem_header_empresa.png"

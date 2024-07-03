@@ -4,8 +4,8 @@ import { FiMenu } from "react-icons/fi";
 import AELogo from "../../images/breno.png"
 import { useState } from "react";
 import { FaBell, FaTrash } from "react-icons/fa";
-import { MdPlace } from "react-icons/md";
-import { GoGear, GoSearch } from "react-icons/go";
+
+import { GoGear} from "react-icons/go";
 import { BiHome } from "react-icons/bi";
 import { FaListCheck } from "react-icons/fa6";
 import { GiPadlock } from "react-icons/gi";
@@ -14,12 +14,12 @@ import { IoDocumentText } from "react-icons/io5";
 import { PiClockCounterClockwiseLight } from "react-icons/pi";
 import { TbHelpCircleFilled, TbClipboardCheck } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function HeaderBanco() {
     const [perfilAtivo, setPerfilAtivo] = useState(false);
-    const navigate = useNavigate();
+
 
 
  // Função para colocar e remover painel lateral

@@ -18,7 +18,6 @@ import futuroTres from "../../images/futuroTres.png"
 import waveFeedBack from "../../images/feedBack.png"
 import faleConosco from "../../images/faleConosco.png"
 import waveFuturoQuatro from "../../images/waveFuturoQuatro.png"
-import futuroQuatro from "../../images/futuroQutro.png"
 import portugues from "../../images/portugues.jpg"
 import ingles from "../../images/Ingles.jpg"
 

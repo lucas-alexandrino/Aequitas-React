@@ -1,6 +1,6 @@
-import Grid from "@mui/material/Grid";
+
 import { useState } from "react";
-import { FaStar } from "react-icons/fa";
+
 import './Perfil.css';
 // Icons
 import { BiHome } from "react-icons/bi";

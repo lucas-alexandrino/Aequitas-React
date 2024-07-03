@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./HeaderVagas.css"
 import "../perfil/Perfil.css";
 import { FaBell, FaTrash } from "react-icons/fa";
-import { MdPlace } from "react-icons/md";
+
 import { GoGear, GoSearch } from "react-icons/go";
 import { BiHome } from "react-icons/bi";
 import { FaListCheck } from "react-icons/fa6";
