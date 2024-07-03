@@ -1,0 +1,176 @@
+.headerEmpressaContainer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(7, 22, 63);
+    color:rgb( 250, 250, 250);
+    padding: 0 30px;
+    width: 100vw;
+    height: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: all 0.3s;
+    z-index: 999;
+}
+.headerEmpressaContainer nav{
+    margin: 0 0 0 auto;
+    font-size: clamp(13px, 1.3vw - 2px, 32px);
+}
+.headerEmpressaContainer nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.headerEmpressaContainer nav ul li{
+    margin: 0 3vw 0 7vw;
+    display: flex;
+}
+.business{
+    position: absolute;
+    top:70%;
+    left:150px;
+    font-weight: bold;
+    font-family: "David libre";
+}
+
+.headerEmpressaContainer nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    color: rgb(250, 250, 250);
+}
+
+.headerEmpressaContainer nav ul li a:before{
+    content: "";
+    width: 0;
+    height:5px;
+    background-color: rgb(53, 78, 139);
+    position: absolute;
+    top:100%;
+    left: 0;
+    transition: 0.7s;
+}
+
+.headerEmpressaContainer nav ul li:hover a:before{
+    width: 100%;
+}
+
+.logoHeaderEmpressa{
+    font-size: 40px;
+    font-family: "David libre";
+}
+
+.logoUm{
+    display: inline;
+}
+
+.logoDois{
+    display: none;
+}
+
+.escritaHeaderEmpressa{
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.escritaHeaderEmpressa a{
+    color: rgb(118, 156, 255);
+}
+
+.escritaHeaderEmpressa a:hover{
+    text-decoration: underline;
+}
+
+.conteudoEmpressa{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+    margin: 0 0 0 auto;
+}
+.conteudoEmpressa .nomeUsuario{
+    font-size: clamp(13.5px, 1.3vw + 2px, 3vw);
+    margin: 0 10px;
+}
+.conteudoEmpressa button{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudoEmpressa button:hover, .conteudoEmpressa img:hover{
+    cursor: pointer;
+}
+
+.conteudoEmpressa img{
+    height: 40px;
+    width: 40px;
+    border: 1px rgb(250, 250, 250) solid;
+    border-radius: 50%;
+}
+.menuHamburguer{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.menuHamburguer:hover{
+    cursor: pointer;
+}
+
+.menuHamburguer span{
+    width: 30px;
+    border: 3px solid rgb( 255, 255, 255);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0.5%;
+    transition: .5s;
+}
+
+.menuHamburguer span:nth-child(1){
+    top: 30%
+}
+
+.menuHamburguer span:nth-child(3){
+    top: 70%
+}
+
+
+
+@media(max-width: 600px){
+    .logoUm{
+        display: none;
+    }
+    .logoDois{
+        display: inline;
+    }
+    .headerEmpressaContainer{
+        padding: 0 15px;
+    }
+
+    .business{
+        top:70%;
+        left: 15px;
+    }
+}
+
+@media(max-width: 900px){
+    .headerEmpressaContainer nav{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .conteudoEmpressa button, .conteudoEmpressa img, .conteudoEmpressa .nomeUsuario{
+        display: none;
+        
+    }
+}

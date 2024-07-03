@@ -1,0 +1,56 @@
+
+.container-de-retangulos {
+    display: flex;
+    justify-content: center; /* Centraliza os retângulos horizontalmente */
+    align-items: center; /* Centraliza os retângulos verticalmente */
+    height: 100vh; /* Define a altura do container para ocupar toda a altura da tela */
+    background-color: #1a43aa;
+  }
+  
+  .retangulo {
+    width: 300px; /* Largura do retângulo */
+    height: 400px; /* Altura do retângulo */
+    background-color: white; /* Cor do retângulo */
+    margin-right: 20px; /* Espaçamento entre os retângulos */
+
+  }
+  .retangulo p{
+    padding: 10px;
+    color: rgb(32, 31, 31);
+  }
+  .imagem-mensal,
+  .imagem-anual{
+    position: absolute; /* Posiciona a imagem absolutamente em relação ao retângulo */
+    top: 54px; /* Ajusta a distância do topo */
+    left: 24%; /* Ajusta a distância da esquerda */
+    transform: translateX(-49%); /* Centraliza horizontalmente */
+    width: 301px; /* Largura da imagem */
+    height: 84px; /* Altura da imagem */
+  }
+  .imagem-mensal{
+    transform: translateX(57%); /* Centraliza horizontalmente */
+
+  }
+  .imagem-anual{
+    transform: translateX(164%); /* Centraliza horizontalmente */
+    width: 300px; /* Largura da imagem */
+
+  }
+  .botao-para-pagamentos3 {
+    position: absolute; /* Posiciona o botão absolutamente em relação ao seu contêiner */
+    bottom: 30px; /* Distância do botão até a parte inferior do contêiner */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-54%); /* Centraliza horizontalmente */
+    padding: 10px 121px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color:#fff;; /* Cor de fundo do botão */
+    color: #1a43aa; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 1px; /* Borda arredondada */
+    cursor: pointer; /* Mostra que o botão é clicável */
+  }
+  .imagem-gratuito{
+  width: 100%;
+
+
+  }

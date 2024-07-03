@@ -1,0 +1,230 @@
+.containerCadastroEmpresa{
+    background-color: rgb(240, 240, 240);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    overflow: hidden;
+}
+.containerCadastroEmpresa a{
+    text-decoration: none;
+    color: rgb(118, 156, 255);
+}
+
+.containerCadastroEmpresa a:hover{
+    text-decoration:underline;
+}
+
+
+.cadastroEmpresa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.formularioCadastroEmpresa{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.formularioCadastroEmpresa form{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 0 4%;
+
+}
+.formularioCadastroEmpresa form button:hover, .formularioCadastroEmpresa form input[type="checkbox"]{
+    cursor: pointer;
+}
+.formularioCadastroEmpresa form input{
+    width: 100%;
+    height: calc(10vh - 20px);
+    margin: 0;
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+.labelContent{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: calc(10vh + 10px);
+    margin: 0;
+}
+
+.labelContent span{
+    margin: 0;
+    padding: 0 0 0 15px;
+    color: rgb(196, 35, 35);
+}
+.redesEmpresa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.redesEmpresa p{
+    font-size: clamp(11px, 3vw - 7px, 20px );
+}
+.redesEmpresa .complementoEmpresa{
+    margin: 0 0 0 65%;
+}
+
+.itensEmpresa{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    padding: 0 0 0 41%;
+    gap: 0 30px;
+    margin: 2vh 0 0 0; 
+}
+
+.itensEmpresa button{
+    width: 40%;
+    height: calc(8vh + 5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0 1vw;
+    border-radius: 10px;
+    border: none;
+}
+
+.juncaoLabelCheckboxEmpresa{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 0 0 41%;
+    gap: 10px;
+    margin: 2vh 0 0 0;
+}
+
+.juncaoLabelCheckboxEmpresa input[type="checkbox"]{
+    height: 20px;
+    width: 25px;
+}
+
+.juncaoLabelCheckboxEmpresa span{
+    margin: 0;
+    padding: 0 0 0 15px;
+    color: rgb(196, 35, 35);
+}
+
+.juncaoLabelCheckboxEmpresa label{
+    font-size: clamp(10px, 1vw, 16px);
+    text-align: justify;
+    width: 75%;
+    margin: 0 0 2vh 0;
+}
+
+.finalFormEmpresa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+}
+#cadastrarEmpresa{
+    width: 50%;
+    height: calc(7vh + 5px);
+    border-radius: 20px;
+    font-size: clamp(13px, 2vw - 5px, 20px);
+    font-weight: bold;
+    background-color: rgb(26, 67, 170);
+    color: rgb(240, 240, 240);
+    margin: 0 0 0 40%;
+}
+
+.finalFormEmpresa label{
+    font-size: clamp(10px, 1vw, 16px);
+    margin: 1vh 0 0 55%;
+}
+
+#waveCadastroEmpresa, #personaCadastroEmpresa{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+}
+
+#waveCadastroEmpresa{
+    width: 35%;
+    height: 40%;
+}
+
+#personaCadastroEmpresa{
+    width: 40vw;
+    height: 50vh;
+    left: .3%;
+    bottom: .4%;
+}
+
+
+.direitos{
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, -25%);
+    color: rgb(170, 170, 170);
+    font-size: clamp(8px, 1vw + 5px, 13px);
+}
+
+
+
+
+@media(max-width: 600px){
+    
+    #waveCadastroEmpresa, #personaCadastroEmpresa{
+        display: none;
+    }
+
+    .formularioCadastroEmpresa form{
+        width: 100%;
+    }
+
+    .formularioCadastroEmpresa form input{
+        width: 100%;
+        height: calc(7vh - 20px);
+        margin: 1vh 1vw 1vh 0;
+    }
+
+    .itensEmpresa{
+        width: 100%;
+    }
+    .itensEmpresa button{
+        width: 100%;
+    }
+
+    .finalFormEmpresa{
+        width: 100%;
+    }
+    #cadastrarEmpresa{
+        width: 70%;
+        height: calc(7vh - 15px);
+    }
+
+    .juncaoLabelCheckboxEmpresa{
+        width: 100%;
+        height: calc(5vh + 5px);
+    }
+
+    .juncaoLabelCheckboxEmpresa input[type="checkbox"]{
+        height: 15px;
+        width: 15px;
+        margin: 0 3vw 0 0;
+    }
+    .redesEmpresa .complementoEmpresa{
+        margin: auto;
+    }
+}

@@ -1,0 +1,204 @@
+
+
+.headerVagaContainer{
+    display: flex;
+    align-items: top;
+    background-image: url('../../images/Ellipse.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:rgb( 250, 250, 250);
+    padding: 10px 30px;
+    width: 100%;
+    height: 40vh;
+    position: -webkit-sticky;
+    top: 0;
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+
+.logoHeaderPessoa{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "David libre";
+}
+
+.logoUm{
+    display: inline;
+
+}
+
+.logoDois{
+    display: none;
+}
+
+.conteudoPessoa{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: top;
+    justify-content: end;
+    
+}
+.conteudoPessoa .nomeUsuario{
+    font-size: 15px;
+    margin: 10px 10px;
+}
+.conteudoPessoa button{
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudoPessoa img{
+    height: 40px;
+    width: 40px;
+    border: 1px ;
+    border-radius: 50%;
+}
+.menuHamburguer{
+    height: 40px;
+    width: 40px;
+}
+
+.menuHamburguer:hover{
+    cursor: pointer;
+}
+
+.menuHamburguer span{
+    width: 30px;
+    height: 4px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    right: 0.5%;
+    transition: .5s;
+}
+
+
+/*
+
+.menuHamburguer span:nth-child(1){
+    top:4%
+}
+
+.menuHamburguer span:nth-child(3){
+    top:8%
+}
+.menuHamburguer span:nth-child(2){
+    top:6%
+} 
+
+
+*/
+
+
+
+
+@media(max-width: 600px){
+    .logoUm{
+        display: none;
+    }
+    .logoDois{
+        display: inline;
+    }
+}
+
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%; 
+    height: 74px;
+    background-color: #F5F5F5;
+    justify-content: center;
+    margin: auto;
+    border-radius: 40px;
+   
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%; 
+    height: 74px;
+    background-color: #F5F5F5;
+    border-radius: 40px;
+    
+    font-size:16px;
+    color: #a1a1a1;
+   
+}
+
+.campo input {
+    font-size:16px;
+    color: #a1a1a1;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    width: 100%;
+
+}
+
+
+.campo1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%; 
+    height: 74px;
+    background-color: #F5F5F5;
+    border-radius: 40px;
+    
+    font-size:16px;
+    color: #a1a1a1;
+}
+
+.campo1 button {
+    height: 49px;
+    width: 240px;
+    margin: 10px;
+    border-radius: 40px;
+    color: white;
+    background-color: #1A43AA;
+}
+
+.campo1 input {
+    font-size:16px;
+    color: #a1a1a1;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    width: 100%;
+  
+    
+}
+
+.titulos {
+    display: flex;
+    width: 100%;
+    padding: 15px
+}
+.tituloVagas {
+    color: #1A43AA;
+    margin-top: 50px;
+}
+
+.maisVagas {
+    
+    margin: auto 0 0 auto;
+    color: #1A65AA;
+}
+
+a {
+    color: currentColor;
+}

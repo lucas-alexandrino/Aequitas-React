@@ -1,0 +1,146 @@
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  
+  }
+.oracle-secao {
+      text-align: center;
+    }
+  
+  
+.avaliacao{
+      display: flex;
+      text-align: center;
+      margin-top: -12vh;
+      margin-left: 68vh;
+  }
+.oracle-avaliacao{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25vw;
+    font-size: 20px;
+  }
+  
+    
+.oracle-logo {
+      width: 100px;
+      margin-right: 80vh;
+      border-radius: 15px;
+    }
+.main-content .secoes{
+    display: flex;
+    justify-content: center;
+    line-height: 10vh;
+    font-size:25px;
+    font-family:  Arial,Verdana,Helvetica,sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;  
+    }
+  
+.main-content a{
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000000;
+}
+  
+.oracle-info {
+      margin-top: 20px;
+}
+    
+.contato-info {
+      display: flex;
+      margin-right: 40vw;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+}
+  
+    
+.contato-avatar {
+   
+    height: 215px;
+    border-radius: 15%;
+    margin-right: 20px;
+}
+.contato-details{
+      color:#000000;
+      text-align: justify;
+}
+    
+.contato-details h2 {
+      margin: 0;
+}
+    
+.contato-details p {
+      margin: 5px 0;
+}
+#estrelas{
+    color: yellow;
+  
+}
+
+/*
+
+.linha{
+    display: flex;
+    flex-direction: column;
+    transform: translate(24vh, 0vh);
+    margin-bottom: 20px;
+}
+
+*/
+
+
+.main-content form {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+  
+.main-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+
+.main-content input[type="text"], .main-content input[type="tel"], .main-content select {
+  
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px teal;
+}
+  
+#botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #001f3f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .main-content button:hover {
+      background-color: #004080;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }

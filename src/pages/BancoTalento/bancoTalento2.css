@@ -1,0 +1,342 @@
+
+
+.logoEmpresa-pg2{
+    transform: translate(21vw, -12vh);
+}
+.empresaNome-pg2 {
+    font-weight: bolder;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #000000;
+    transform: translate(28vw, -27vh);
+}
+.stars-pg2{
+    width: 100px;
+    transform: translate(30.6vw, -29.8vh);
+}
+
+
+.starsRate-pg2{
+    transform: translate(29vw, -26vh);
+}
+
+
+.pesquisarVaga-pg2{
+    transform: translate(0vw, -13vh);
+}
+.fundo-pg2{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-30vh);
+   
+   }
+.pesquisarVaga-pg2{
+    display: flex; 
+    max-width: 650px; 
+    margin: 0 auto; 
+    background-color: #d9d9d979; 
+    padding: 10px; 
+    border-radius: 0px 50px 50px 0px; 
+    box-shadow: 0 2px 5px rgb(0 0 0 / 58%);
+  }
+
+.buscar-pg2 {
+    flex: 1; 
+    background-color: #ffffff00;
+    padding: 10px; 
+    font-size: 16px; 
+    border: none; 
+  }
+
+
+.btnBuscar-pg2 {
+    padding: 10px 20px; 
+    background-color: #07163F; 
+    color: white; 
+    border: none; 
+    border-radius: 100px;
+    cursor: pointer;
+     
+  }
+  
+  
+  button[type="submit"]:hover {
+    background-color: #0b297a;
+  }
+  
+/* fs */
+.vagas-container-pag2 {
+    display: flex;
+    margin-left: 162px;
+    justify-content: flex-start;
+    font-family: "inter", arial ,sans-serif;
+}
+
+.vagaCard:hover{
+    transform: scale(1.05);
+}
+
+.vagaCard-pag2 {
+    background-color: #fff;
+    border: none;
+    height: 180px;
+    padding: 20px;
+}
+
+.vagaTitulo-pg2 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    color: #07163F;
+}
+.vagaDescri-pg2 {
+    margin: 15px 110px 0px 0px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+.nota-pg2{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translate(21vw, 0vh);
+}
+
+.nota-pg2 img{
+    width: 30px;
+}
+
+
+.line2{
+    transform: translate(12.2vw, -9vh);
+}
+/* canditatos lado esquerdo */
+
+.candidato-lista-pg2 {
+    margin-left: 170px;
+}
+.candidato-lista-pg2 .lista-candidato-pg2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 210px;
+}
+.candidato-lista-pg2 .lista-candidato-pg2 .fotoCandidato-pg2 {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.candidato-info-pg2 {
+    display: flex;
+    flex-direction: column;
+}
+.candidato-info-pg2 .name-pg2 {
+    font-weight: bold;
+}
+.candidato-info-pg2 .location-pg2 {
+    color: #666;
+}
+.candidato-info-pg2 .prof-pg2 {
+    font-weight: bold;
+    color: #666;
+}
+
+.name-pg2{
+    font-family: "inter", arial ,sans-serif;
+    color: #07163F;
+}
+
+.lista-candidato-pg2:hover{
+    transform: scale(1.02);
+
+}
+
+/* pre-perfil */
+.tituloPerfil{
+    font-weight: bold;
+    color: #07163F;
+    position: absolute;
+    transform: translate(21vw, -8vh);
+}
+.cartao-perfil {
+    display: flex;
+    width: 60vw;
+    transform: translate(29vw, -29vh);
+    justify-content: space-between;
+    background-color: #eeeeee;
+    padding: 20px;
+    padding-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.secao-esquerda, .secao-direita {
+    width: 40%;
+}
+.info-perfil {
+    display: flex;
+    align-items: center;
+    font-family: "inter", arial ,sans-serif;
+}
+.info-perfil img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+}
+.info-perfil .nome-pg2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #07163F;
+    width: 200px;
+}
+.info-perfil .profissao{
+    color: #666;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.info-perfil .localizacao {
+    color: #666;
+}
+.botao-curriculo {
+    display: block;
+    height: 65px;
+    margin: 20px 0;
+    padding: 17px 0px 0px 60px;
+    background-color: #ffffff;
+    color: #1877f2;
+    text-align: justify;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao-curriculo p{
+    color: #414141;
+    font-size: 10px;
+}
+
+.botao-curriculo:hover{
+    transform: scale(1.05);
+}
+.resume{
+    position: absolute;
+    transform: translate(-4vw, -1.5vh);
+}
+.seta-pg2{
+    position: absolute;
+    transform: translate(15vw, -4vh);
+}
+.ultima-atualizacao {
+    text-align: center;
+    color: #666;
+    margin-top: -15px;
+}
+.detalhes-perfil {
+    margin-top: 20px;
+}
+.detalhes-perfil h3 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #07163F;
+}
+.detalhes-perfil ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.detalhes-perfil ul li {
+    margin-bottom: 10px;
+    color: #333333;
+}
+.detalhes-perfil p {
+    font-size: 12px;
+}
+.secao-direita .info-contato {
+    margin-bottom: 20px;
+}
+.secao-direita .info-contato h3 {
+    margin-bottom: 20px;
+}
+.secao-direita .info-contato p {
+    margin: 0;
+    display: flex;
+    color: #666;
+    flex-direction: row;
+    align-items: center;
+}
+.secao-direita .info-contato img{
+    margin-right: 10px;
+}
+/* .secao-direita .grupo-botoes button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+} */
+
+.certificado{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #07163F;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    align-items: center;
+}
+.certificado:hover{
+    transform: scale(1.05);
+}
+.perfil-completo{
+    display: block;
+    width: 100%;
+    height: 65px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #07163F;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.perfil-completo:hover{
+    transform: scale(1.05);
+}
+.certificado img{
+    margin-right: 10px;
+}
+
+.chat{
+    transform: translate(16vw, 7vh);
+}
+
+.abas .selected{
+    border-bottom: 2px solid #07163F;
+}
+
+.voltar{
+    border-style: none;
+    background: none;
+    position: absolute;
+    transform: translate(-5vw, -6vh);
+}
+

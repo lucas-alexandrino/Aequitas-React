@@ -1,0 +1,69 @@
+#containerErro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding:30px 30px 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerErro{
+    width: 100%;
+    
+}
+
+.headerErro h1{
+    font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
+    font-family: "David libre";
+    color: rgb(26,67,170);
+}
+
+#containerErro h2{
+    font-size: clamp(1.7rem, 10vw - 7vh, 3rem);
+    color: rgb(26,67,170);
+}
+
+#containerErro .redes{
+    width: 100%;
+    gap:15px;
+    align-items: center;
+    display: flex;
+    margin: auto 0 0;
+    justify-content: center;
+    z-index: 1;
+}
+
+#containerErro .redes button{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0,0, 0);
+    border: none;
+    cursor: pointer;
+}
+#containerErro img{
+    position: absolute;
+    width: 75%;
+    height: 65%;
+    bottom: 0;
+}
+#containerErro p{
+    font-size: clamp(1.7rem, 5vw - 7vh, 3rem);
+    color: rgb(7,22,63)
+}
+
+#containerErro small span{
+    font-size: clamp(0.7rem, 4vw - 7vh, 3rem);
+    color: rgb(7,22,63)
+}
+
+#containerErro button{
+    width: 30%;
+    height: calc(3vw + 2vh);
+    background-color: rgb(26,67,170);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 30px;
+    z-index: 1;
+    cursor: pointer;
+}

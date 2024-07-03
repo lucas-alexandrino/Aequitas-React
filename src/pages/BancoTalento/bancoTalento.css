@@ -1,0 +1,179 @@
+body {
+    overflow-x: hidden;
+}
+
+.fundo{
+ display: flex;
+ flex-wrap: nowrap;
+ align-items: center;
+ justify-content: center;
+ transform: translateY(-30vh);
+
+}
+
+.perfilOracle-pg1{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 77px;
+    transform: translate(-16vw, -25vh);
+}
+
+
+.empresaNome {
+    font-weight: bolder;
+    margin-left: 10px;
+    font-size: 20px;
+
+    color: #000000;
+    transform: translate(-1.5vw, 9vh);
+
+}
+.logoEmpresa{
+    transform: translate(-0.2vw, 13vh);
+}
+.stars{
+    width: 100px;
+}
+
+
+.stars,.starsRate{
+    transform: translate(-8vw, 14vh);
+}
+
+.line{
+    transform: translate(13vw, -25vh);
+}
+
+.abas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transform: translate(2vw, -24vh);
+    font-family: "inter", arial ,sans-serif;
+    font-weight: bold;
+    color: #07163F;
+}
+
+.abasconfig{
+    margin-right: 57px;
+}
+/* btn */
+
+.pesquisarVaga{
+    transform: translate(0vw, -13vh);
+}
+
+.pesquisarVaga{
+    display: flex; 
+    max-width: 650px; 
+    margin: 0 auto; 
+    background-color: #d9d9d979; 
+    padding: 10px; 
+    border-radius: 0px 50px 50px 0px; 
+    box-shadow: 0 2px 5px rgb(0 0 0 / 58%);
+  }
+
+  .buscar {
+    flex: 1; 
+    background-color: #ffffff00;
+    padding: 10px; 
+    font-size: 16px; 
+    border: none; 
+  }
+
+
+.btnBuscar {
+    padding: 10px 20px; 
+    background-color: #07163F; 
+    color: white; 
+    border: none; 
+    border-radius: 100px;
+    cursor: pointer;
+     
+  }
+  
+  
+  button[type="submit"]:hover {
+    background-color: #0b297a;
+  }
+  
+
+  /* vagas */
+
+.vagas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    justify-content: center;
+    font-family: "inter", arial ,sans-serif;
+}
+
+.vagaCard:hover{
+    transform: scale(1.05);
+}
+
+.vagaCard {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 28%);
+    width: 400px;
+    height: 180px;
+    padding: 20px;
+    position: relative;
+}
+
+.vagaTitulo {
+    margin: 0 0 10px;
+    font-size: 25px;
+    color: #07163F;
+}
+
+.vagaLocal {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.vagaDescri {
+    margin: 38px 110px 0px -1px;
+    font-size: 13px;
+    color: #555;
+}
+
+.VagaEntrar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #07163F;
+    width: 100px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.VagaEntrar:hover {
+    background-color: #082472;
+    transform: scale(1.1);
+}
+
+.nota-pg1{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 2px 0px 0px 300px;
+}
+
+.footer{
+    height: 50px;
+}
+
+.abas .selected{
+    border-bottom: 2px solid #07163F;
+}

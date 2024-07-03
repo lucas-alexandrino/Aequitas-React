@@ -1,0 +1,449 @@
+
+.border1 {
+    background-image: url('../../images/borda1.png');
+    border-radius: 25% 64% 72% 23% / 0% 0% 70% 72%; ;
+    background-color:rgb(7, 22, 63);
+    width: 100%;
+    height: 200px;
+}
+
+.border1 h2 {
+    padding: 80px 300px;
+    font-size: 55px;
+    color: white;
+}
+
+.bvindo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bvindo>p {
+    font-size: 30px;
+    margin: 100px 0px 0px 0px;
+    width: 700px;
+    color: rgb(7, 22, 63);
+    font-weight: 600; 
+}
+
+.bvindo>img {
+    width: 500px;
+}
+
+.missao {
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+
+.paragrafos {
+    font-size: 23px;
+    width: 500px;
+    margin-top: 20px;
+    color: rgb(7, 22, 63);
+    font-weight: 600;
+
+}
+
+#paragrafo_visao {
+    font-size: 23px;
+    width: 500px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.visao {
+    margin-left: 290px;
+    margin-top: 180px;
+}
+
+
+
+.mvv {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../images/onda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+ }
+
+.mv {
+    display: flex;
+    flex-direction: row;
+}
+
+.valores{
+    margin-left: 150px;
+    margin-top: 90px;
+}
+
+
+#lista_valores {
+    font-size: 23px;
+    width: 1200px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.tituloesub {
+    display: flex;
+    justify-content: center;
+}
+
+.tituloesub .titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+    margin-top: 22px;
+}
+
+.tituloesub .titulo>p {
+    font-size: 23px;
+    width: 1300px;
+    margin-top: 20px;
+    color: rgb(7, 22, 63);
+    font-weight: 450;
+}
+
+.origem>h5 {
+    font-size: 30px;
+    color: #D82D7E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.equidade img{
+    width: 50vw;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.equidade {
+    display: flex;
+}
+
+.logos {
+    position: relative;
+    height: 800px;
+}
+
+.logos img {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+
+.logos img:nth-child(3) {
+    top: 2%;
+}
+.slogan>p{
+    font-size: 20px;
+    color: #07163F;
+    font-weight: 500;
+}
+
+.slogan>h5{
+    font-size: 50px;
+    font-family: David Libre;
+    color: #07163F;
+    margin-left: 10px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    padding-top: 120px;
+    padding-left: 430px;
+}
+
+.logosa {
+    color: #07163F;
+    padding-left: 150px;
+    padding-top: 150px;
+    width: 800px;
+}
+
+.logosa .a {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logosa .b {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;    
+}
+
+.divisao {
+    width: 100vw;
+    height: 3px;
+    background-color: #07163F;
+    margin-left: 110px;
+    margin-top: 400px;
+  
+}
+
+.paletas {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.tituloesubpaletas {
+    display: flex;
+    flex-direction: column;
+    color: #07163F;
+    margin-top: 300px;
+    margin-left: 110px;
+}
+
+.tituloesubpaletas>h5 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tituloesubpaletas>p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;    
+}
+
+.paletasimg img {
+    margin-top: 120px;
+    margin-right: 40px;
+    width: 100vw;
+}
+
+.hashs {
+    display: flex;
+    font-size: 25px;
+    color: #07163F;
+    font-weight: 600;
+    margin-left: 200px;
+    width: 1100px;
+    height: 600px;
+    background-image: url(../../images/paletas.png);
+    margin-top: 100px;
+    align-items: end;
+    justify-content: center;
+    
+}
+
+.hashs>p {
+    margin-right: 100px; 
+    padding-bottom: 30px;
+}
+
+.fontes {
+    color: #07163F;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 90px;
+}
+
+.guiafontes{
+    width: 50vw;
+    margin-right: 170px;
+}
+
+.guiafontes>h4{
+    font-size: 30px;
+}
+
+.guiafontes .a {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px
+}
+
+.guiafontes .titulogrande{
+    font-size: 50px;
+    font-family: David Libre;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.guiafontes .sub {
+    font-size: 25px;
+    font-weight: 550;
+    margin: 15px 0px 15px 0px;
+}
+.guiafontes .b{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.fontesuso {
+    width:50vw;
+    margin-left: 50px; 
+}
+
+.fontesuso>h4{
+    font-size: 30px;
+}
+
+.fontesuso>p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.tipofontes {
+display: flex;
+flex-direction: row;
+
+}
+
+.davidlibre {
+    width: 500px;
+    font-family: David Libre;
+    margin-right: 60px;
+}
+
+.davidlibre .a{
+    font-size: 50px;
+    font-family: David Libre;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.davidlibre .b{
+    font-size: 25px;
+    font-family: David Libre;
+    font-weight: 600;
+    margin: 35px 0px 35px 0px;
+}
+
+.davidlibre .c{
+    font-size: 25px;
+    font-family: David Libre;
+    font-weight: 500;
+
+}
+
+.inter .a{
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.inter .b{
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 600;
+    margin: 35px 0px 35px 0px;
+}
+
+.inter .c{
+    font-size: 21px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.divisaovertical {
+    background-color: #07163F;
+    width: 2px;
+}
+
+.nossaequipe {
+    width: 100%;
+    height: 1400px;
+
+}
+
+.partecima{
+    width: 100%;
+    height: 45%;
+    background-image: url('../../images/nossaequipefundo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.partebaixo {
+    width: 100%;
+    height: 56%;
+    background-image: url('../../images/nossaequipefundo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.tituloesub2 {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.titulo2>p {
+    font-size: 23px;
+    color: #07163F;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 150px;
+
+}
+
+.fotos2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin-left: 315px;
+}
+
+.login {
+    width: 300px;
+    height: 60px;
+    background-color: rgb(26, 67, 170);
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 40px;
+    margin: 40px 0px 40px 0px;
+    cursor: pointer;
+}
+
+.junte-se {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-junte-se {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-junte-se>p{
+    margin-top: 30px;
+    font-size: 23px;
+}

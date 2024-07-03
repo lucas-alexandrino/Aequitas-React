@@ -1,0 +1,13 @@
+.titulo0{
+    width: 300px;
+}
+
+.titulo0>h4 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+.linha {
+    width: 130px;
+    height: 5px;
+}

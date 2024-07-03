@@ -1,0 +1,20 @@
+.background_vaga {
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 20px;
+
+    box-shadow:#D9D9D9 5px 5px 0  0;
+
+
+}
+
+.background_vaga p {
+    color: #a1a1a1;
+    font-weight: 500;
+}
+
+
+/* CONTAINER FIXO */
+
+

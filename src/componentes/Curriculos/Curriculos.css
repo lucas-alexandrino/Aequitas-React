@@ -1,0 +1,280 @@
+
+.CadastroCv a{
+    text-decoration: none;
+  }
+  
+  .cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5vw;
+    background-color: #d9d9d998;
+    border-bottom:solid 10px #1a43aac2;
+    
+  }
+  .CadastroCv svg {
+    margin-bottom: -2px;
+  }
+  
+  #logosite{
+    padding: 10px;
+    width: 35vh;
+  
+  }
+
+#area_candidato {
+margin: 20px;
+font-weight: 500;
+color:#1A43AA;
+}
+
+#titulo_curriculo {
+   font-size: 15px;
+   font-weight: 600;
+   color: #646464;
+}
+
+#titulo_atributos {
+    color: #3f3f3f;
+}
+
+#btn-dados-pessoais{
+    color: #1a43aab7;
+    height: 35px;
+    width: 30vh;
+    background-color: white;
+    border-radius: 10px;  
+    font-weight: 700;
+    border: solid 1px #1a43aab7; 
+}
+
+#dados {
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.dados-pessoais {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+ 
+    margin: auto;
+    color: white;
+    font-weight: 300;
+    background-color: #1A43AA;
+    border-radius: 17px;
+    width: 100vh;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+  .dadosTitulo {
+    color: #1a43aac2;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100vh;
+  }
+  .Cv {
+    color: #1a43aac2;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100vh;
+    gap:40px;
+    padding: 10px;
+  }
+
+  .Cv table tr {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  }
+
+  .dadosPrincipais{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #1a43aace;
+    border-radius: 17px;
+    width: 100vh;
+    
+  
+  }
+  .CadastroImportante{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: justify; 
+  }
+
+
+  .CadastroCv button:hover {
+    background-color: #1a43aab7;
+    color: black;
+    transform: scale(0.9);
+  
+  }
+
+
+  .btn-curriculo {
+    display: flex;
+    text-align: left;
+    color: #1a43aab7;
+    height: 40px;
+    width: 30vh;
+    margin:10px;
+    background-color: white;
+    border-radius: 10px;  
+    font-size: 15px;
+    font-weight: 800;
+    border: solid 1px #1a43aab7; 
+    justify-content: center;
+    align-items: center;
+    box-shadow:#D9D9D9 0 5px 0  0;
+    cursor: pointer;
+    transition: background-color color 0.5 ease, transform 0.5 ease;
+  
+  }
+  
+  
+  .btn-curriculo:hover {
+    background-color: #1a43aab7;
+    color: black;
+    transform: scale(0.9);
+  
+  }
+
+  #btn-editar {
+    display: flex;
+    justify-content: right;
+    font-weight: 500;
+    color: #1A43AA;
+    
+  }
+
+  
+  .alinhamentoTexto{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 20px;
+  }
+  .especificacoes{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 17px;
+    width: 100vh;
+    margin-bottom: 10px;
+  }
+  
+  .Objetivo{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 17px;
+    width: 100vh;
+  
+  }
+  
+  .Formacao{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 17px;
+    width: 100vh;
+  }
+  
+  .curso{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 17px;
+    width: 100vh;
+  
+  }
+  .Idioma{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 17px;
+    width: 100vh;
+  
+  }
+  
+  .Competencias{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 17px;
+    width: 100vh;
+  
+  }
+  
+  .Informacoes{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 17px;
+    width: 100vh;
+  
+  }
+  .CadastroCv{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #d9d9d998;
+  }
+  .CadastroCv form{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #btn-finalizar {
+
+    background-color: #1A43AA;
+    color: white;
+    height: 35px;
+    width: 20vh;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;  
+    border: solid 1px #1a43aab7; 
+  }
+
+  .rodape-curriculo{
+    position: relative;
+    padding: 10px;
+
+  }
+
+  #div-btn-finalizar {
+    position: absolute;
+   display: flex;
+   justify-content: right;
+   padding: 10px;
+  }

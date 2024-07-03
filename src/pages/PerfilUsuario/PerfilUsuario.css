@@ -1,0 +1,123 @@
+.fotousuario {
+    margin: 50px 200px;
+}
+
+.fotousuario>img {
+    margin-left: 45px;
+}
+
+.fotousuario>h3 {
+    margin-top: 10px;
+}
+
+.infosusuario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 830px;
+}
+
+.infosusuario h3 {
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.dadosusuario {
+    border-bottom:  1px solid rgb(0, 0, 0);
+    width: 400px;
+    padding: 10px 0px;
+}
+
+
+.dadosusuario>div>p {
+    font-size: 24px;
+    margin: 7px 8px;
+}
+
+.situacao-usuario {
+    margin-top: 15px;
+    width: 400px;
+}
+
+.situacao-usuario h4{
+    font-size: 22px;
+}
+
+.situacao-usuario p {
+    font-size: 20px;
+    margin: 5px 8px;
+}
+
+.inicio-imediato {
+    margin-bottom: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.telefone {
+    display: flex;
+    align-items: center;
+}
+
+.localizacao {
+    display: flex;
+    align-items: center;
+}
+
+.escolaridade-usuario {
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-perfilusuario {
+        display: flex;
+        flex: row;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.curriculos {
+
+   
+    width: 500px;
+    height: 600px;
+    margin: 50px;
+    margin-right: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside>h2 {
+    margin-right: 500px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    color: rgb(77, 77, 77);
+}
+
+.curriculoaequitas {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 130px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 17px 17px 17px 17px;
+}
+
+.curriculo_aequitas {
+    display: flex;
+}
+

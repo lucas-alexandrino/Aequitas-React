@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .pagamento3 {
+    height: 100vh; /* Altura de 100% da viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a43aa; /* Fundo azul */
+  }
+  
+  .quadrado3 {
+    width: 500px; /* Largura do quadrado */
+    height: 500px; /* Altura do quadrado */
+    background-color: white; /* Cor de fundo do quadrado */
+  }
+
+  
+.passo-texto {
+  margin-bottom: 10px;
+}
+
+.p{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+#formas-pagamento {
+  margin-top: 30px; /* Adiciona margem superior de 20px */
+  text-align: center;
+  font-size: 24px;
+  
+}
+.input-texto {
+  margin-top: 30px;
+  width: 90%;
+  padding: 10px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  right: 14%;
+  
+}
+.Card {
+  width: 150px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 4px 24px; /* Centraliza a imagem horizontalmente e adiciona margem superior e inferior */
+  display: block; /* Garante que a imagem seja exibida como um bloco para alinhar corretamente */
+  margin-top: 17px;
+
+}
+
+.pagamento3 p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pagamento3 input[type="radio"] {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.pagamento3 label {
+  margin-left: 5px;
+  text-align: center;
+}
+.formas-pagamentos{
+  text-align: center;
+  margin-right: 180px;
+  margin-top: 5px;
+  
+}
+
+
+
+.label-pix {
+  margin-right: 224px; /* Ajuste a margem conforme necessário */
+}
+
+.label-credito {
+  margin-right: 190px; /* Ajuste a margem conforme necessário */
+}
+
+.label-debito {
+  margin-right:194px;/* Ajuste a margem conforme necessário */
+}
+
+.finalizar-btn {
+  margin-top: 30px;
+  padding: 10px 50px;
+  background-color: #1a43aa; /* Cor azul */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 170px;
+}

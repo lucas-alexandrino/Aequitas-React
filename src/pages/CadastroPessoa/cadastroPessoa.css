@@ -1,0 +1,192 @@
+.containerCadastroPessoa{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    position: absolute;
+}
+.containerCadastroPessoa a{
+    text-decoration: none;
+    color: rgb(118, 156, 255);
+}
+
+.containerCadastroPessoa a:hover{
+    text-decoration:underline;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.formularioCadastroPessoa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.formularioCadastroPessoa form{
+    width:60%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.cadastroPessoa{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0 20px
+}
+
+.labelContentPessoa{
+    display: flex;
+    width:48.3%;
+    flex-direction: column;
+    position: relative;
+}
+
+.labelContentPessoa button{
+    position:absolute;
+    width: 30px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    right: 0;
+}
+    
+.labelContentPessoa:nth-child(1),
+.labelContentPessoa:nth-child(2),
+.labelContentPessoa:nth-child(3),
+.labelContentPessoa:nth-child(4),
+.labelContentPessoa:nth-child(5){
+    width: 100%;
+}
+.labelContentPessoa span{
+    font-size: clamp(.5 rem, 1vw * .3vh, 1.5rem);
+    white-space: nowrap;
+}
+.formularioCadastroPessoa form input{
+    width: 100%;
+    height: calc(7vh - 10px);
+    margin: 1.5vh 1.5vw 1.5vh 0;
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+.redesPessoa{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.redesPessoa h2, .redesPessoa p{
+    font-size: clamp(11px, 3vw - 7px, 20px );
+}
+
+.itensPessoa{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+    margin: 1.5vh 0 ;
+    z-index: 1;
+}
+
+.itensPessoa button{
+    width: 100%;
+    display: flex;
+    height: calc(5vh + 5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.juncaoLabelCheckboxPessoa{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    margin: 0 0 2vh 0;
+}
+
+.juncaoLabelCheckboxPessoa input[type="checkbox"]{
+    height: 20px;
+    width: 25px;
+    margin: 0 1vw 0 0;
+}
+
+.juncaoLabelCheckboxPessoa label{
+    font-size: clamp(10px, 1vw, 16px);
+    text-align: justify;
+}
+
+.finalFormPessoa{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.finalFormPessoaPessoa label{
+    margin: 1vh 0 0 0;
+    font-size: clamp(10px, 1vw, 16px);;
+
+}
+
+
+#cadastrarPessoa{
+    width: 80%;
+    height: calc(7vh + 5px);
+    border-radius: 20px;
+    font-size: clamp(13px, 2vw - 5px, 20px);
+    font-weight: bold;
+    background-color: rgb(26, 67, 170);
+    color: rgb(240, 240, 240);
+    cursor:pointer
+}
+
+
+
+#waveCadastroPessoa, #personaCadastroPessoa{
+    position: absolute;
+    bottom: -13.5%;
+    right: 0;
+    z-index: 0;
+}
+
+#waveCadastroPessoa{
+    width: 40%;
+    height: 100%;
+}
+
+#personaCadastroPessoa{
+    width: 50%;
+    height: 65%;
+}
+
+
+.direitos{
+    position: absolute;
+    bottom: -13%;
+    right: 50%;
+    transform: translate(50%, -25%);
+    color: rgb(170, 170, 170);
+    font-size: clamp(8px, 1vw + 5px, 13px);
+}
+

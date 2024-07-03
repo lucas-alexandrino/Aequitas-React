@@ -1,0 +1,42 @@
+
+.curriculo_aequitas {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.curriculoaequitas:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.6s;    
+}
+
+.curriculo_aequitas{
+    transition: 0.3s all;
+}
+
+.curriculo_aequitas .centro>h5 {
+    color: rgb(24, 119, 242);
+    font-size: 20px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);     
+}
+
+.centro>p {
+
+    margin-top: 7px;
+}
+
+.seta {
+    margin-top: 20px;
+}
+
+.olho {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
