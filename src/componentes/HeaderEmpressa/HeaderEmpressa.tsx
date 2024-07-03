@@ -12,7 +12,8 @@ import { IoDocumentText } from "react-icons/io5";
 import { PiClockCounterClockwiseLight } from "react-icons/pi";
 import { TbHelpCircleFilled, TbClipboardCheck } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import breno from "../../images/breno.png";
 
 interface HeaderEmpresaProps {
     login: boolean;
@@ -30,13 +31,18 @@ export default function HeaderEmpressa(props: HeaderEmpresaProps) {
         }
     };
 
+    const handleDoubleClick = () => {
+        navigate("/");
+    };
+    const navigate = useNavigate();
+    
     return (
         <>
             <div onClick={ocultarPainelLateral} className="app">
                 {
                     login ?
                         <div className="headerEmpressaContainer logada">
-                            <h1 className="logoHeaderEmpressa logoUm">
+                              <h1 className="logoHeaderEmpressa logoUm" onDoubleClick={handleDoubleClick}>
                                 ÆQUITAS
                             </h1>
                             <h1 className="logoHeaderEmpressa logoDois">
@@ -54,7 +60,7 @@ export default function HeaderEmpressa(props: HeaderEmpresaProps) {
                             </nav>
                             <div className="conteudoEmpressa">
                                 <button><FaBell size="30px" color="rgb(250, 250, 250)"/></button>
-                                <img src="../src/images/breno.png" alt="Persona" />
+                                <img src={breno} alt="Persona" />
                                 <p className="nomeUsuario">Breno Jones</p>
                                 <div className={`menuHamburguer `} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
                                     <span></span>
@@ -76,7 +82,7 @@ export default function HeaderEmpressa(props: HeaderEmpresaProps) {
                             </p>
 
                             <p className="escritaHeaderEmpressa">
-                                já usa Æquitas?<Link to="/login">Login</Link>
+                            já usa Æquitas?<Link to="/login" state={1}>Login</Link>
                             </p>
                         </div>
                 }

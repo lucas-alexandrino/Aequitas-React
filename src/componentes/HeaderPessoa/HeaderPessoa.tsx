@@ -11,6 +11,7 @@ import { PiClockCounterClockwiseLight } from "react-icons/pi";
 import { TbHelpCircleFilled, TbClipboardCheck } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom";
+import maria from "../../images/Fotousuario.png"
 
 interface HeaderPessoaProps {
     login: boolean;
@@ -39,7 +40,7 @@ export default function HeaderPessoa(props: HeaderPessoaProps) {
                 {
                     props.login ?
                         <div className="headerPessoaContainer logada">
-                            <h1 className="logoHeaderPessoa logoUm" onDoubleClick={handleDoubleClick}>
+                        <h1 className="logoHeaderPessoa logoUm" onDoubleClick={handleDoubleClick}>
                                 ÆQUITAS
                             </h1>
                             <h1 className="logoHeaderPessoa logoDois">
@@ -47,7 +48,7 @@ export default function HeaderPessoa(props: HeaderPessoaProps) {
                             </h1>
                             <div className="conteudoPessoa">
                                 <button><FaBell size="30px" color="white" /></button>
-                                <img src="../src/images/Fotousuario.png" alt="Persona" />
+                                <img src={maria} alt="Persona" />
                                 <p className="nomeUsuario">Maria Marques</p>
                                 <div className={`menuHamburguer `} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
                                     <span></span>
