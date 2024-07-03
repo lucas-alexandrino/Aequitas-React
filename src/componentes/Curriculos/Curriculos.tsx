@@ -10,6 +10,7 @@ import { Grid } from '@mui/material';
 import { MdPerson } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { MdPlace } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 function Curriculo() {
   return (
