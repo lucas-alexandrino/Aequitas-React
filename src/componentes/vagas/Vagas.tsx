@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Vagas.css";
 import "../vagasampliada/VagasAmpliada.css";
 import { Grid } from "@mui/material";
