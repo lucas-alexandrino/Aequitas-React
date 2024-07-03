@@ -17,7 +17,7 @@ import { ImExit } from "react-icons/im";
 
 
 export default function Perfil() {
-    const [perfilAtivo, setPerfilAtivo] = useState(false);
+
    //  const [vagas, setVagas] = useState<Postagem[]>([]); | Vetor de vagas
     //   z-index: 999; /* Para sobrepor ao conteúdo da página */
     

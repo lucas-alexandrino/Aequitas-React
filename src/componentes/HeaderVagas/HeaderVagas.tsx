@@ -19,7 +19,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 export default function Header() {
-    const [menuAtivo, setMenuAtivo] = useState(false);
+   /*  const [menuAtivo, setMenuAtivo] = useState(false);  ${menuAtivo ? 'ativo' : ''} */
     const [perfilAtivo, setPerfilAtivo] = useState(false);
 
     const navigate = useNavigate();
@@ -69,7 +69,7 @@ export default function Header() {
                         <button><FaBell size="30px" color="#fff" /></button>
                         <img src="../src/images/Fotousuario.png" alt="foto" ></img>
                         <p className="nomeUsuario">Maria Marques</p>
-                        <div className={`menuHamburguer ${menuAtivo ? 'ativo' : ''}`} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
+                        <div className={`menuHamburguer `} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
                             <span></span>
                             <span></span>
                             <span></span>

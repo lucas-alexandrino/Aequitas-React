@@ -1,6 +1,12 @@
 import './titulo.css'
 
-export default function Titulo(props){
+interface TituloProps {
+    color: string;
+    nome: string;
+  }
+  
+
+export default function Titulo(props: TituloProps){
     return(
     <>
         <div className="titulo0">

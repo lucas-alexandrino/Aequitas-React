@@ -51,28 +51,25 @@ export default function Home() {
     };
 
     const [selectedValue, setSelectedValue] = useState(1);
-    const [contador, setContador] = useState(0);
-
-    const handleChange = (event: any) => {
-        setSelectedValue(parseInt(event.target.value, 10));
-    };
-
-    useEffect(() => {
-        const incrementarContador = () => {
-            setContador(prevContador => prevContador + 1);
+   /* const [contador, setContador] = useState(0); */
+ /*     setContador(prevContador => prevContador + 1); 
             setSelectedValue(prevSelectedValue => {
                 if (prevSelectedValue < 4) {
                     return prevSelectedValue + 1;
                 } else {
                     return 1;
-                }
-            });
-        };
-        const intervalo = setInterval(incrementarContador, 7000);
-        return () => clearInterval(intervalo);
-    }, [selectedValue]);
-
-    /* Redirecionando o Click no button de pagamentos */
+                } */
+                    const handleChange = (event: any) => {
+                        setSelectedValue(parseInt(event.target.value, 10));
+                    };
+                
+                    useEffect(() => {
+                        const incrementarContador = () => {
+                            setSelectedValue(prevSelectedValue => (prevSelectedValue < 4 ? prevSelectedValue + 1 : 1));
+                        };
+                        const intervalo = setInterval(incrementarContador, 7000);
+                        return () => clearInterval(intervalo);
+                    }, [selectedValue]);
 
 
     return (
@@ -177,7 +174,7 @@ const NavBar = (props: any) => {
     )
 }
 const BemVindo = (props: any) => {
-    const navigate = useNavigate();
+ /*    const navigate = useNavigate(); */
     return (
         <>
         {

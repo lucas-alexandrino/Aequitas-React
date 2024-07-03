@@ -1,6 +1,13 @@
 import './Membros.css'
 
-export default function Membro(props) {
+interface MembroProps {
+    foto: string;
+    nome: string;
+    color: string;
+    descricao: string;
+}
+
+export default function Membro(props: MembroProps) {
     return(
         <>
         <div className="membros">
