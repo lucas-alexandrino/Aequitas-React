@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./headerEmpressa.css";
 import "../perfil/Perfil.css";
-import { FaBell } from "react-icons/fa";
+
+import { FaBell, FaTrash } from "react-icons/fa";
 import { GoGear } from "react-icons/go";
 import { BiHome } from "react-icons/bi";
 import { FaListCheck } from "react-icons/fa6";
@@ -18,7 +19,7 @@ interface HeaderEmpresaProps {
 }
 
 export default function HeaderEmpressa(props: HeaderEmpresaProps) {
-    const [menuAtivo, setMenuAtivo] = useState(false);
+    /* const [menuAtivo, setMenuAtivo] = useState(false);  ${menuAtivo ? 'ativo' : ''}*/
     const [login] = useState(props.login); // Utilizando props.login diretamente
     const [perfilAtivo, setPerfilAtivo] = useState(false);
 
@@ -55,7 +56,7 @@ export default function HeaderEmpressa(props: HeaderEmpresaProps) {
                                 <button><FaBell size="30px" color="rgb(250, 250, 250)"/></button>
                                 <img src="../src/images/breno.png" alt="Persona" />
                                 <p className="nomeUsuario">Breno Jones</p>
-                                <div className={`menuHamburguer ${menuAtivo ? 'ativo' : ''}`} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
+                                <div className={`menuHamburguer `} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
                                     <span></span>
                                     <span></span>
                                     <span></span>

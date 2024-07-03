@@ -17,7 +17,7 @@ interface HeaderPessoaProps {
 }
 
 export default function HeaderPessoa(props: HeaderPessoaProps) {
-    const [menuAtivo, setMenuAtivo] = useState(false);
+    /* const [menuAtivo, setMenuAtivo] = useState(false); ${menuAtivo ? 'ativo' : ''} */
     const [perfilAtivo, setPerfilAtivo] = useState(false);
     const navigate = useNavigate();
 
@@ -49,7 +49,7 @@ export default function HeaderPessoa(props: HeaderPessoaProps) {
                                 <button><FaBell size="30px" color="white" /></button>
                                 <img src="../src/images/Fotousuario.png" alt="Persona" />
                                 <p className="nomeUsuario">Maria Marques</p>
-                                <div className={`menuHamburguer ${menuAtivo ? 'ativo' : ''}`} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
+                                <div className={`menuHamburguer `} onClick={() => { setPerfilAtivo(!perfilAtivo); }}>
                                     <span></span>
                                     <span></span>
                                     <span></span>
