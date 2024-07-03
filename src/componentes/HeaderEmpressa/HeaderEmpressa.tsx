@@ -1,12 +1,8 @@
 import { useState } from "react";
-
-import "./headerEmpressa.css"
-
-import "../perfil/Perfil.css"
-
-import { FaBell, FaTrash } from "react-icons/fa";
-
-import { GoGear} from "react-icons/go";
+import "./headerEmpressa.css";
+import "../perfil/Perfil.css";
+import { FaBell } from "react-icons/fa";
+import { GoGear } from "react-icons/go";
 import { BiHome } from "react-icons/bi";
 import { FaListCheck } from "react-icons/fa6";
 import { GiPadlock } from "react-icons/gi";
@@ -17,17 +13,22 @@ import { TbHelpCircleFilled, TbClipboardCheck } from "react-icons/tb";
 import { HiMail } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
-export default function HeaderEmpressa(props: any) {
+interface HeaderEmpresaProps {
+    login: boolean;
+}
+
+export default function HeaderEmpressa(props: HeaderEmpresaProps) {
     const [menuAtivo, setMenuAtivo] = useState(false);
-    const [login, setLogin] = useState(props.login);
-    const [empresa, setEmpresa] = useState(false);
+    const [login] = useState(props.login); // Utilizando props.login diretamente
     const [perfilAtivo, setPerfilAtivo] = useState(false);
+
     const ocultarPainelLateral = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = event.target as HTMLElement;
-        if (perfilAtivo && !target.closest('.painelLateral') && !target.closest('.menuHamburguer')) {
+        if (perfilAtivo && !target.closest('.painelRecrutador') && !target.closest('.menuHamburguer')) {
             setPerfilAtivo(false);
         }
     };
+
     return (
         <>
             <div onClick={ocultarPainelLateral} className="app">
@@ -46,10 +47,8 @@ export default function HeaderEmpressa(props: any) {
                             <nav>
                                 <ul>
                                     <li><a href="#">Publicar Vagas</a></li>
-
                                     <li><a href="/pagamento">Planos</a></li>
                                     <li><a href="/talentos">Encontrar Candidatos</a></li>
-
                                 </ul>
                             </nav>
                             <div className="conteudoEmpressa">
@@ -81,47 +80,41 @@ export default function HeaderEmpressa(props: any) {
                         </div>
                 }
 
-<div className={`painelRecrutador  ${perfilAtivo ? 'ativo' : ''}`} >
+                <div className={`painelRecrutador ${perfilAtivo ? 'ativo' : ''}`}>
 
-<div className="header-perfil" >
-    <img className="AELogo" src="../src/images/breno.png" alt="foto" ></img>
-    <div className="perfil">
-        <h4> Breno Jones</h4>
-        <p>breno.jones@gmail.com</p>
-    </div>
+                    <div className="header-perfil">
+                        <img className="AELogo" src="../src/images/breno.png" alt="foto" ></img>
+                        <div className="perfil">
+                            <h4> Breno Jones</h4>
+                            <p>breno.jones@gmail.com</p>
+                        </div>
+                    </div>
 
-</div>
-<div className="todo-perfil">
-    <div className="body-perfil">
+                    <div className="todo-perfil">
+                        <div className="body-perfil">
+                            <h4><a href="#meu-perfil"> <span className="icon-margin"><BiHome size={25} /></span>Meu Perfil</a></h4>
+                            <h4><a href="#meu-curriculo"> <span className="icon-margin"><IoDocumentText size={25} /></span> Currículos em aberto</a></h4>
+                            <h4><a href="/talentos"><span className="icon-margin"><PiClockCounterClockwiseLight size={25} /></span>Vagas Adicionadas</a></h4>
+                            <h4><a href="#alerta-vagas"> <span className="icon-margin"><HiMail size={25} /></span>Alerta de Currículos</a></h4>
+                        </div>
 
-        <h4><a href="#meu-perfil"> <span className="icon-margin"><BiHome size={25} /></span>Meu Perfil</a></h4>
-        <h4><a href="#meu-curriculo"> <span className="icon-margin"><IoDocumentText size={25} /></span> Currículos em aberto</a></h4>
+                        <div className="config-opcoes">
+                            <h4><a href="#configuracoes">  <span className="icon-margin"><GoGear size={25} /></span>Configurações</a></h4>
+                            <h4><a href="#alterar-senha"><span className="icon-margin"><GiPadlock size={25} /></span>  Alterar senha</a></h4>
+                            <h4><a href="#excluir-conta">  <span className="icon-margin"><FaTrash size={25} /></span> Excluir conta</a></h4>
+                        </div>
 
-        <h4><a href="/talentos"><span className="icon-margin"><PiClockCounterClockwiseLight size={25} /></span>Vagas Adicionadas</a></h4>
+                        <div className="ajuda-opcoes">
+                            <h4><a href="#central-ajuda"> <span className="icon-margin"><TbHelpCircleFilled size={25} /></span>Central de Ajuda</a></h4>
+                            <h4><a href="#termo-uso">  <span className="icon-margin"><TbClipboardCheck size={25} /></span>Termo de Uso</a></h4>
+                            <h4><a href="#politica-privacidade"> <span className="icon-margin"><FaListCheck size={25} /></span> Política de Privacidade</a></h4>
+                        </div>
 
-        <h4><a href="#alerta-vagas"> <span className="icon-margin"><HiMail size={25} /></span>Alerta de Currículos</a></h4>
-
-    </div>
-    <div className="config-opcoes">
-        <h4><a href="#configuracoes">  <span className="icon-margin"><GoGear size={25} /></span>Configurações</a></h4>
-        <h4><a href="#alterar-senha"><span className="icon-margin"><GiPadlock size={25} /></span>  Alterar senha</a></h4>
-        <h4><a href="#excluir-conta">  <span className="icon-margin"><FaTrash size={25} /></span> Excluir conta</a></h4>
-
-    </div>
-    <div className="ajuda-opcoes">
-        <h4><a href="#central-ajuda"> <span className="icon-margin"><TbHelpCircleFilled size={25} /></span>Central de Ajuda</a></h4>
-        <h4><a href="#termo-uso">  <span className="icon-margin"><TbClipboardCheck size={25} /></span>Termo de Uso</a></h4>
-        <h4><a href="#politica-privacidade"> <span className="icon-margin"><FaListCheck size={25} /></span> Política de Privacidade</a></h4>
-    </div>
-    <div className="encerrar-sessao">
-
-        <h3><a href="/login">  <span className="icon-margin"><ImExit size={20} /></span>Encerrar sessão</a></h3>
-
-    </div>
-</div>
-</div>
-
-                
+                        <div className="encerrar-sessao">
+                            <h3><a href="/login">  <span className="icon-margin"><ImExit size={20} /></span>Encerrar sessão</a></h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
