@@ -16,7 +16,7 @@ function Curriculo() {
     <>
  <div className="cabecalho">
   <a href='/'><img src={logo} alt="logo aequitas " id="logosite" /></a>  
-  <a href='/perfilusuario'><h3 id="area_candidato"> Área do Candidato</h3></a>
+  <Link to='/perfilusuario'><h3 id="area_candidato"> Área do Candidato</h3></Link>
     </div>
       
     <div className="CadastroCv">
